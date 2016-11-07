@@ -1,0 +1,29 @@
+{% block content %}
+
+<table style="width:100%">
+	<tr>
+		<th>Nome</th> 
+		<th>UF</th>
+		<th>Tipo de IE</th>
+		<th>Nota</th>
+		<th>Pesquisa</th>
+		<th>Patentes</th>
+		<th>Incubadas</th>
+	</tr>
+	
+	{% for universidade in universidades %}
+	
+	<tr>
+		<th>{{ universidade.nome }}</th> 
+		<th>{{ universidade.uf }}</th>
+		<th>{{ universidade.tipo_ie }}</th>
+		<th>{{ universidade.nota_inovacao }}</th>
+		<th>{{ universidade.pesquisa_inovacao }}</th>
+		<th>{{ universidade.patentes_inovacao }}</th>
+		<th>{{ universidade.incubadas_inovacao }}</th>
+	</tr>
+
+	{% endfor %}
+</table>
+
+{% endblock %}

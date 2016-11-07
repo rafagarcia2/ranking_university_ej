@@ -1,0 +1,27 @@
+{% block content %}
+
+<table style="width:100%">
+	<tr>
+		<th>Nome</th> 
+		<th>UF</th>
+		<th>Tipo de IE</th>
+		<th>Nota</th>
+		<th>Redes</th>
+		<th>Projetos</th>
+	</tr>
+	
+	{% for universidade in universidades %}
+	
+	<tr>
+		<th>{{ universidade.nome }}</th> 
+		<th>{{ universidade.uf }}</th>
+		<th>{{ universidade.tipo_ie }}</th>
+		<th>{{ universidade.nota_extensao }}</th>
+		<th>{{ universidade.redes_extensao }}</th>
+		<th>{{ universidade.projetos_extensao }}</th>
+	</tr>
+
+	{% endfor %}
+</table>
+
+{% endblock %}

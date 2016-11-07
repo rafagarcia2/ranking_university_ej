@@ -1,0 +1,29 @@
+{% block content %}
+
+<table style="width:100%">
+	<tr>
+		<th>Nome</th> 
+		<th>UF</th>
+		<th>Tipo de IE</th>
+		<th>Nota</th>
+		<th>Postura Discente</th>
+		<th>Postura Docente</th>
+		<th>Disciplinas</th>
+	</tr>
+	
+	{% for universidade in universidades %}
+	
+	<tr>
+		<th>{{ universidade.nome }}</th> 
+		<th>{{ universidade.uf }}</th>
+		<th>{{ universidade.tipo_ie }}</th>
+		<th>{{ universidade.nota_cult_emp }}</th>
+		<th>{{ universidade.postura_discente_ce }}</th>
+		<th>{{ universidade.postura_docente_ce }}</th>
+		<th>{{ universidade.disciplinas }}</th>
+	</tr>
+
+	{% endfor %}
+</table>
+
+{% endblock %}

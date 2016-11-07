@@ -1,0 +1,27 @@
+{% block content %}
+
+<table style="width:100%">
+	<tr>
+		<th>Código</th>
+		<th>Nome</th> 
+		<th>UF</th>
+		<th>Região</th>
+		<th>Tipo de IE</th>
+		<th>Nota</th>
+	</tr>
+	
+	{% for universidade in universidades %}
+	
+	<tr>
+		<th>{{ universidade.codigo }}</th>
+		<th>{{ universidade.nome }}</th> 
+		<th>{{ universidade.uf }}</th>
+		<th>{{ universidade.regiao }}</th>
+		<th>{{ universidade.tipo_ie }}</th>
+		<th>{{ universidade.nota_geral }}</th>
+	</tr>
+
+	{% endfor %}
+</table>
+
+{% endblock %}
