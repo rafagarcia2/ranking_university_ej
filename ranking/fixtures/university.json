@@ -1,0 +1,38 @@
+[{
+	"model": "ranking.University",
+	"pk": 3, 
+	"fields": {
+		"nome": "Universidade do Japão",
+		"codigo": "39",
+		"uf":  "SP",
+		"regiao": "Sudeste",
+		"tipo_ie": "Pública",
+		"nota_geral": 7.67,
+
+		"nota_cult_emp": 5.92,
+		"postura_discente_ce": 7.86,
+		"postura_docente_ce": 5.74,
+		"disciplinas": 4.15,
+		
+		"nota_inovacao": 7.95,
+		"pesquisa_inovacao": 9.85,
+		"patentes_inovacao": 10.00,
+		"incubadas_inovacao": 5.98,
+		
+		"nota_extensao": 8.10,
+		"redes_extensao": 7.86,
+		"projetos_extensao": 8.83,
+
+		"nota_infraestrutura": 8.54,
+		"qualidade_infra": 7.09,
+		"parque_tecno_infra": 10.00,
+
+		"nota_internacionalizao": 8.68,
+		"intercambio_inter": 8.08,
+		"pesquisas_inter": 9.28,
+
+		"nota_capital_financeiro": 7.00,
+		"orcamento_cap": 6.00,
+		"endowment_cap": 10.00
+	}
+}]

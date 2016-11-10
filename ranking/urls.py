@@ -2,7 +2,7 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.ranking_geral),
+    url(r'^$', views.page_index),
     url(r'^ranking_geral/$', views.ranking_geral, name='ranking_geral'),
     url(r'^ranking_cultura/$', views.ranking_cultura, name='ranking_cultura'),
     url(r'^ranking_inovacao/$', views.ranking_inovacao, name='ranking_inovacao'),

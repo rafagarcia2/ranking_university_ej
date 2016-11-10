@@ -1,0 +1,1353 @@
+{% load staticfiles %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Empresa Júnior do Curso de Engenharia de Petróleo da UFRN">
+  <meta name="author" content="EJECT - Empresa Junior da Escola de Ciências e Tecnologia">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="A EJECT é uma empresa júnior que criará a sua solução na área de desenvolvimento web." />
+  <meta property="og:title" content="BRENT - Engenharia" />
+  <meta property="og:url" content="http://brentengenharia.ct.ufrn.br/" />
+  <title>Universidades Empreendedoras</title>
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/animate.min.css' %}" rel="stylesheet"> 
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/lightbox.css' %}" rel="stylesheet">
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+  <link id="css-preset" href="{% static 'css/presets/preset1.css' %}" rel="stylesheet">
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+  <!-- <link rel="import" href="teste.html"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="{% static 'images/logo.jpg' %}">
+</head><!--/head-->
+
+<body>
+
+  <div class="container-fluid">
+  <header id="home">   
+    <div class="row">
+    <div class="main-nav" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" id="bt" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="#">
+                <h1>
+                    <img class="img-responsive" src="{% static 'images/temp.PNG' %}" alt=""/>
+                </h1>
+            </a>
+                            
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-menu"> 
+            <li class="scroll active"><a href="#home">Inicio</a></li>
+            <li class="scroll"><a href="#framework">Framework</a></li>                     
+            <li class="scroll"><a href="#rankingGeral">Ranking</a></li>
+            <li class="scroll"><a href="#indicadores">Indicadoress</a></li>     
+          </ul>
+        </div>
+      </div>
+    </div><!--/#main-nav-->
+    </div>
+  </header><!--/#home-->
+  </div>
+    
+  
+ 
+  <section  class="features parallax" id="firstimage" >
+    <div class="container-fluid">
+      <div class="row">
+          <img src="{% static 'images/fig.'%}PNG" alt=""  style="width: 100%; height: auto;"/>                
+      </div>
+    </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-2 ">
+                <img src="{% static 'images/Apoio/bj.png'%}" id="BJ" alt=""/>
+            </div>
+            <div class="col-sm-3" >
+                <img src="{% static 'images/Apoio/AIESEC.png'%}" id="Aiesec" alt=""/>
+            </div>
+            <div class="col-sm-2">
+                <img src="{% static 'images/Apoio/CsF.png'%}" id="CSF" alt=""/>
+            </div>
+            <div class="col-sm-2">
+                <img src="{% static 'images/Apoio/brasa.png'%}" alt=""/>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'images/Apoio/enactus.png'%}" id="Enactus" alt=""/>
+            </div>
+            
+            
+            
+            
+        </div>
+      </div>
+    
+  </section><!--/#Primeira imagem-->
+  
+  <!-- INSTITUIÇÕES DE APOIO-->
+   <!-- /INSTITUIÇÕES DE APOIO-->
+  
+  <!--FRAMEWORK-->
+  <section class="features parallax" id="framework">
+      <div class="container">
+          <div class="row textos headers">
+  
+              <h1><span>Framework</span></h1><br/>
+              <div class="col-sm-12">
+                <p>
+                  A <strong>Universidade Empreendedora</strong> é a <strong>comunidade acadêmica</strong>, inserida em um <strong>ecossistema favorável</strong>,
+                  que <strong>desenvolve a sociedade</strong> por meio de <strong>práticas inovadoras</strong>
+              </p>  
+              </div>
+              
+              <div class="col-sm-12">
+                  <img src="{% static 'images/Fluxogramas/Fluxograma-geral.PNG'%}" class="img-responsive center-block" alt="fluxo"/>
+              </div>
+          </div>
+      </div>
+  </section><!--/Framwork-->
+  
+  <!--TABELA DE RANKEAMENTO GERAL-->
+  <section class="features parallax" id="rankingGeral">
+      <div class="container">
+          <div class="row textos headers">
+              <h1><span>Ranking</span></h1><br/>
+              <div class="col-sm-12">
+                  <table  class="table table-striped table-bordered" cellspacing="0" width="80%">
+                          <thead>
+                              <tr>
+                                  <th>Posição</th>
+                                  <th>IES</th>
+                                  <th>UF</th>
+                                  <th>Tipo de IES</th>
+                                  <th>Nota Geral</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              {% for universidade in univ_geral %}
+  
+                                <tr>
+                                  <th>{{ forloop.counter }}</th>
+                                  <th>{{ universidade.nome }}</th> 
+                                  <th>{{ universidade.uf }}</th>
+                                  <th>{{ universidade.tipo_ie }}</th>
+                                  <th>{{ universidade.nota_geral }}</th>
+                                </tr>
+
+                              {% endfor %}
+                          </tbody>
+                      </table>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--/TABELA-->
+  
+  <!--     Indicadores    -->
+  <section  class="features parallax" id="indicadores" >
+    <div class="container">
+      <div class="row headers">
+          <h1><span>Indicadores</span></h1><br/>
+ 
+        <div class="col-sm-2 col-xs-12 wow fadeInLeft" id="cultura" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <a href="#" >
+            <i ><img src="{% static 'images/medal.svg' %}" alt=""/></i>    
+            </a>
+        </div>
+        <div class="col-sm-2 col-xs-12 wow fadeInLeft" id="inovacao" data-wow-duration="1000ms" data-wow-delay="500ms">
+            <a href="#">
+            <i ><img src="{% static 'images/technology.svg' %}" alt=""/></i>  
+            </a>
+        </div> 
+        <div class="col-sm-2 col-xs-12 wow fadeInLeft" id="extensao" data-wow-duration="1000ms" data-wow-delay="700ms"> 
+            <a href="#">
+          <i ><img src="{% static 'images/nature.svg' %}" alt=""/></i>   
+            </a>
+        </div> 
+        <div class="col-sm-2 col-xs-12 wow fadeInLeft" id="infraestrutura" data-wow-duration="1000ms" data-wow-delay="700ms">
+            <a href="#">
+                <i ><img src="{% static 'images/office.svg' %}" alt=""/></i>
+            </a>
+        </div>
+        <div class="col-sm-2 col-xs-12 wow fadeInLeft" id="internacionalizacao" data-wow-duration="1000ms" data-wow-delay="700ms">
+            <a href="#">
+                <i ><img src="{% static 'images/internet.svg' %}" alt=""/></i>
+            </a>
+          
+        </div>
+        <div class="col-sm-2 col-xs-12 wow fadeInLeft" id="capital" data-wow-duration="1000ms" data-wow-delay="700ms"> 
+            <a href="#">
+                <i ><img src="{% static 'images/money.svg' %}" alt=""/></i> 
+            </a>
+        </div>
+                       
+      </div>
+        
+       <div class="row textos">
+              <div class="col-sm-12 " id="c">
+        
+              </div>
+       </div>
+    </div>
+  </section><!--/#features-->
+  
+  <!--     /Indicadores    -->
+  <!---->
+  
+  <!-- CONTEUDOS ALTERNANTES-->
+  
+  <!--Divs ocultas que aparecem ao clicar nos cases-->
+        <!--                 FLUXOGRAMAS                 -->
+        <div class="remodal imgflux" data-remodal-id="fluxograma-cultura" >
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img src="{% static 'images/Fluxogramas/Fluxograma-CulturaEmpreendedora.PNG' %}" alt=""/>
+        </div>
+        <div class="remodal imgflux" data-remodal-id="fluxograma-capital" >
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img src="{% static 'images/Fluxogramas/Fluxograma-CapitalFinanceiro.PNG' %}" alt=""/>
+        </div>
+         <div class="remodal imgflux" data-remodal-id="fluxograma-inovacao" >
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img src="{% static 'images/Fluxogramas/Fluxograma-Inovacao.PNG' %}" alt=""/>
+        </div>
+        <div class="remodal imgflux" data-remodal-id="fluxograma-extensao" >
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img src="{% static 'images/Fluxogramas/Fluxograma-Extensao.PNG' %}" alt=""/>
+        </div>
+        <div class="remodal imgflux" data-remodal-id="fluxograma-infraestrutura" >
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img src="{% static 'images/Fluxogramas/Fluxograma-Infraestrutura.PNG' %}" alt=""/>
+        </div>
+        <div class="remodal imgflux" data-remodal-id="fluxograma-internacionalizacao" >
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img src="{% static 'images/Fluxogramas/Fluxograma-Internacionalizacao.PNG' %}" alt=""/>
+        </div>
+        
+        <!--          Cases de Cultura empreendedora-->
+    <div class="col-sm-12">
+        <div class="remodal" data-remodal-id="case-ufrn"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <div style="background-image: url({% static 'images/temp.png' %})" class="speaker-picture">
+            
+        </div> 
+        <h1>Universidade Federal do Rio Grande do Norte(UFRN)</h1> 
+        <p> 
+            <a href="http://www.ect.ufrn.br/index.php/nova-enfase-em-engenharia-de-negocios" target="_blank">http://www.ect.ufrn.br/index.php/nova-enfase-em-engenharia-de-negocios</a><br/>
+            A Escola de Ciências e Tecnologia (ECT) da UFRN criou um novo modelo de formação que alia o empreendedorismo à inovação:
+            Engenharia de Negócios. Em um único eixo, o estudante irá conhecer sobre mercados, banco de dados, administração de negócios,
+            investimentos econômicos e a como criar oportunidades. A grade curricular é flexível e inclui disciplinas como ‘Projeto de Startup
+            Tecnológica’ e ‘Gestão do Conhecimento’. A ênfase de engenharia de negócios é uma iniciativa para que, já na graduação, o aluno possa
+            criar uma startup ou negócio de base tecnológica.
+
+        </p>
+    </div> 
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-singapura"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>National University of Singapore (Cingapura)</h1> 
+        <p> 
+            <a href="http://enterprise.nus.edu.sg/" target="_blank">http://enterprise.nus.edu.sg/</a><br/>
+            Como um país recente-industrializado, Cingapura hoje está no processo de mudança para
+            um economia de conhecimento, cujo aspecto chave é desenvolvimento econômico dirigido pelas
+            universidades. Assim, a universidade estabeleceu o NEC (Centro de Empreendedorismo de NUS),
+            com uma missão dividida em 4 eixos: Educação de experiência em todos os níveis de estudo, com 
+            bolsas e investimento disponibilizado pela própria universidade para startups; desenvolvimento
+            de empreendedorismo com prêmios, concursos e eventos; uma incubadora; e um programa de pesquisa
+            em assuntos empreendedores para estudar e orientar o desenvolvimento do ecossistema.
+            
+
+        </p>
+    </div>
+    </div>
+        
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-stanford"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Stanford University (Estados Unidos)</h1> 
+        <p> 
+            <a href="http://www.independent.co.uk/student/news/the-billionaire-factory-why-stanford-university-produces-so-many-celebrated-web-entrepreneurs-8706573.html" target="_blank">http://www.independent.co.uk/student/news/the-billionaire-factory-why-stanford-university-produces-so-many-celebrated-web-entrepreneurs-8706573.html</a><br/>
+           Na Universidade de Stanford, professores investem muito tempo em projetos de seus estudantes sendo mentores,
+           e oferecem muitas de suas aulas online de forma gratuita, abertas para qualquer um no mundo inteiro. Além disso,
+           também possuem a Stanford Technology Ventures Program (STVP), um programa acelerador de start-ups fundado por um 
+           estudante de Stanford que oferece espaço grátis, mentoria, investimento, além de suporte legal, aulas de empreendedorismo 
+           e negócio, assuntos globais, e apoio a pesquisa. Por último, especialistas consideram que umas das maiores razões pelas
+           quais Stanford é considerada a universidade mais empreendedora do mundo é pelo lugar que está localizada (Vale do Silício),
+           e também por ter um processo muito rigoroso de aplicação, o que faz com que a universidade possua uma base de alunos excepcionais.
+
+
+        </p>
+    </div> 
+    </div>
+        
+        
+    <div class="col-sm-12">
+     <div class="remodal" data-remodal-id="case-katholieke"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Katholieke Universiteit Leuven (Bélgica))</h1> 
+        <p> 
+            <a href="https://www.oecd.org/site/cfecpr/EC-OECD%20Entrepreneurial%20Universities%20Framework.pdf" target="_blank">https://www.oecd.org/site/cfecpr/EC-OECD%20Entrepreneurial%20Universities%20Framework.pdf</a><br/>
+            Katholieke Universiteit Leuven é uma referência de universidade empreendedora no quesito de autonomia de professores,
+            tem uma estrutura dividida em várias áreas: Política Educacional, Política de Pesquisa & Professores. Cada departamento
+            tem o seu próprio conselho e desenvolve a sua própria estratégia. Não há uma estrutura hierárquica, e cada professor é 
+            livre para criar o seu próprio calendário de pesquisa.
+
+
+        </p>
+    </div> 
+    </div>
+       
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-arizona"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Arizona State University (Estados Unidos)</h1> 
+        <p> 
+            <a href="https://www.oecd.org/site/cfecpr/EC-OECD%20Entrepreneurial%20Universities%20Framework.pdf" target="_blank">https://www.oecd.org/site/cfecpr/EC-OECD%20Entrepreneurial%20Universities%20Framework.pdf</a><br/>
+            A Arizona State University, também considerada uma universidade empreendedora, tem o compromisso de criar um impacto social
+            e econômico na comunidade. Para atingir esse objetivo, redesenharam a universidade nos últimos anos: criou-se uma federação
+            de colégios e escolas interdisciplinares com departamentos, institutos de pesquisa e centros que proporcionam um ambiente acadêmico
+            diverso. Dezesseis novas escolas interdisciplinares foram lançadas nos últimos dois anos, incluindo a Escola de Estudos Globais, Evolução
+            Humana, Mudança Social e Exploração da Terra e do Espaço.
+
+
+        </p>
+    </div> 
+    </div>
+        
+    <div class="col-sm-12">    
+    <div class="remodal" data-remodal-id="case-coursera"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Coursera</h1> 
+        <p> 
+            <a href="https://www.oecd.org/site/cfecpr/EC-OECD%20Entrepreneurial%20Universities%20Framework.pdf" target="_blank">https://www.oecd.org/site/cfecpr/EC-OECD%20Entrepreneurial%20Universities%20Framework.pdf</a><br/>
+            O Coursera consiste de uma parceria de dezesseis universidades de todo o mundo oferecendo os chamados MOOCs (Massive Open Online Courses),
+            que são cursos virtuais proporcionados por professores das universidades parceiras gratuitamente. A plataforma foi fundada no ano de 2011
+            nos Estados Unidos. Até hoje, cursos nas áreas de Humanidades, Medicina, Biologia, Ciências Sociais, Administração, Ciência da Computação
+            e Engenharia são oferecidos, e serve como um sinal de modernização das ferramentas pedagógicas e do aumento da conexão e cooperação entre
+            essas universidades.
+
+        </p>
+    </div>
+    </div>
+        
+    <div class="col-sm-12">    
+    <div class="remodal" data-remodal-id="case-california"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>University of California - Berkeley</h1> 
+        <p> 
+            <a href="http://www.symmetry50.com/blog/2014/10/28/top-25-entrepreneur-colleges" target="_blank">http://www.symmetry50.com/blog/2014/10/28/top-25-entrepreneur-colleges</a><br/>
+            A Universidade da Califórnia, Berkeley, considerada a segunda universidade mais empreendedora dos Estados Unidos, possui a Associação de Empreendedores 
+            de Berkeley, que foca em ajudar os seus membros com networking e com o conhecimento necessário para que possam começar um negócio. Além disso, também é aberto para
+            àqueles que tem interesse no mundo de empreendedorismo, mesmo que não tenham um projeto. A associação trabalha próxima com a SkyDeck, que é a aceleradora de Startups 
+            da universidade, além de outras organizações e departamentos no campus que apoiam o empreendedorismo.
+
+
+        </p>
+    </div>
+    </div>
+      
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-mit"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Massachusetts Institute of Technology (Estados Unidos)</h1> 
+        <p> 
+            <a href="http://college.usatoday.com/2014/07/16/entrepreneurship-programs-foster-student-innovation/" target="_blank">http://college.usatoday.com/2014/07/16/entrepreneurship-programs-foster-student-innovation/</a><br/>
+            O Massachusetts Institute of Technology (MIT) possui o Martin Trust Center for MIT Entrepreneurship, que é um curso oferecido para alunos de graduação que cobre uma variedade de tópicos, desde empreendedorismo
+            na Engenharia até desenvolvimento de Produtos na atualidade da Internet.
+
+
+        </p>
+    </div>
+    </div>
+        
+    <div class="col-sm-12">    
+    <div class="remodal" data-remodal-id="case-rice"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Rice University (Estados Unidos)</h1> 
+        <p> 
+            <a href="https://www.entrepreneur.com/article/237385" target="_blank">https://www.entrepreneur.com/article/237385</a><br/>
+            A Escola de Pós-Graduação da Rice University, no Texas, sedia anualmente a Rice Business Plan Competition (RBPC),
+            que é a maior competição de startups universitárias de todo o mundo. Só em 2014, 42 universidades de todo o mundo 
+            compareceram a competição para apresentar as suas startups para mais de 275 jurados. A competição é estruturada para
+            que todos os 42 times possam voltar para a casa com um prêmio monetário e com conexões de possíveis investidores e mentores.t.
+
+
+        </p>
+    </div>
+    </div>
+      
+    <div class="col-sm-12">    
+    <div class="remodal" data-remodal-id="case-babson"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Babson College (Estados Unidos)</h1> 
+        <p> 
+            <a href="https://www.entrepreneur.com/article/252503" target="_blank">https://www.entrepreneur.com/article/252503</a><br/>
+            Babson College, em Boston, possui uma aula obrigatória para alunos do primeiro ano de graduação chamada Foundations of Management (FOM).
+            Para a aula, os alunos se dividem em equipes de 10 pessoas e possuem um budget (da universidade) de 3 mil dólares para começarem o seu
+            negócio com a mentoria de dois professores. Com isso, os alunos aprendem sobre empreendedorismo, marketing, contabilidade, recursos humanos,
+            operações, além de funções específicas que possuem na "empresa"/projeto. No término do ano, os alunos doam o lucro de seus projetos para a 
+            comunidade local.
+
+
+
+        </p>
+    </div>
+    </div>
+        
+    <!--      FIM DOS CASES DE CULTURA EMPREENDEDORA-->
+    
+    
+    <!--       INICIO DOS CASES DE INOVAÇÃO                -->
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-waterloo"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>University of Waterloo (Canadá) </h1> 
+        <p> 
+            <a href="https://uwaterloo.ca/strategic-plan/in-action/" target="_blank">https://uwaterloo.ca/strategic-plan/in-action/</a><br/>
+           A Universidade de Waterloo se posicionou como o centro do ecossistema canadense. A universidade organizou seus cursos em volta de grandes temas,
+           de forma amplamente multidisciplinar. Estabeleceu um programa extensivo de educação cooperativa com parceiros do setor privado, incubadoras que 
+           começam do nível de graduação, e pesquisa de classe mundial em nanotecnologia através de um centro dedicado. A incubadora Velocity Garage se
+           destaca como umas das melhores do mundo, e as políticas de comercialização de pesquisa que ativamente encorajem o corpo docente e discente a pensar
+           em como o conhecimento gerido dentro da universidade pode-se transformar em soluções de problemas reais no mundo.
+
+
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-usp"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Agência USP de Inovação (AUSPIN-USP) </h1> 
+        <p> 
+            <a href="http://inovacao.usp.br/" target="_blank">http://inovacao.usp.br/</a><br/>
+           A Agência USP de Inovação é o Núcleo de Inovação Tecnológica da USP, responsável por gerir a política de inovação para promover a utilização do
+           conhecimento científico, tecnológico e cultural produzido na universidade, em prol do desenvolvimento sócio-econômico sustentável do Estado de São
+           Paulo e do país.   Atua na proteção do patrimônio industrial e intelectual gerado na Universidade, efetuando todos os procedimentos necessários para
+           o registro de patentes, marcas, direitos autorais de livros, softwares, músicas, entre outras criações.  Oferece apoio aos docentes, alunos e 
+           funcionários da USP na elaboração de projetos em parceria para melhor gerenciar as relações com os setores empresariais, bem como, comunicar para a
+           sociedade em geral o impacto e os benefícios das inovações guiadas pela ciência desenvolvida pelos pesquisadores da USP.   Através de incubadoras de
+           empresas, de parques tecnológicos e de treinamentos específicos, promove o empreendedorismo, oferecendo suporte técnico, gerencial e formação
+           complementar ao empreendedor. Trabalha também na transferência de tecnologias, preocupando-se em colocá-las à disposição da sociedade.   Em parceria com
+           o SEBRAE, atende a diversos públicos por meio do “Disque Tecnologia”, sistema de atendimento via internet que constrói e disponibiliza respostas técnicas
+           demandadas por microempresários atuantes em todos os setores industriais e de serviços.  A Agência USP de Inovação está presente em todos os campi da USP:
+           São Paulo, Bauru, Lorena, Piracicaba, Pirassununga, Ribeirão Preto e São Carlos.
+
+
+
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-vicosa"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Universidade Federal de Viçosa (UFV) </h1> 
+        <p> 
+            <a href="http://g1.globo.com/mg/zona-da-mata/noticia/2016/09/apos-17-anos-de-pesquisas-pomada-base-de-urucum-e-lancada-em-mg.html" target="_blank">http://g1.globo.com/mg/zona-da-mata/noticia/2016/09/apos-17-anos-de-pesquisas-pomada-base-de-urucum-e-lancada-em-mg.html</a><br/>
+           Após 17 anos de pesquisas, pomada a base de urucum é lançada em Minas Gerais. Mecânico e professor universitário desenvolveram projeto em Viçosa. Com dívidas,
+           parceiros quase desistiram, mas atraíram investidores. De lá para cá, a empresa cresceu, os parceiros se tornaram sócios do grupo de investimentos e 
+           os produtos estão em farmácias de todo o país, ajudando milhares de pessoas. A “Profitus Newderm” é utilizada no tratamento de doenças como psoríase,
+           dermatite e outros problemas cutâneos e também pode ser encontrada na internet.
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-capes"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Prêmio CAPES-INTERFARMA de inovação e pesquisa </h1> 
+        <p> 
+            <a href="http://www.ibict.br/Sala-de-Imprensa/noticias/2016/premio-capes-interfarma-de-inovacao-e-pesquisa-2016" target="_blank">http://www.ibict.br/Sala-de-Imprensa/noticias/2016/premio-capes-interfarma-de-inovacao-e-pesquisa-2016</a><br/>
+           O Prêmio CAPES-INTERFARMA de Inovação e Pesquisa na Edição 2016 será outorgado para as duas melhores teses de doutorado relacionadas à Inovação e Pesquisa
+           na Área de Saúde Humana ou Ética/Bioética no Brasil, nas áreas e subáreas de avaliação Medicina, Odontologia, Farmácia, Enfermagem ou de Ciências Biomédicas
+           (que inclui Genética; Fisiologia, Bioquímica, Farmacologia; Imunologia, Microbiologia, Parasitologia e Biologia Celular). A pré-seleção das teses a serem
+           indicadas ao Prêmio CAPES-INTERFARMA de Inovação e Pesquisa ocorre nos programas de pós-graduação das instituições de ensino superior. Após a indicação da
+           tese vencedora pela comissão de avaliação, o coordenador do programa de pós-graduação será responsável pela inscrição da tese.
+
+        </p>
+    </div>
+    </div>
+    
+    <!--       FIM DO CASES DE INOVAÇÃO              -->
+    
+    <!--       INICIO DOS CASES DE EXTENSÃO          -->
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-mej"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Movimento Empresa Júnior: Lei nº 13.267/2016 </h1> 
+        <p> 
+            <a href="http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2016/Lei/L13267.htm" target="_blank">http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2016/Lei/L13267.htm</a><br/>
+            <a href="http://www.brasiljunior.org.br/">Crie sua EJ: http://www.brasiljunior.org.br/</a>
+            Disciplina a criação e a organização das associações denominadas empresas juniores, com funcionamento perante instituições de ensino superior.
+            É uma oportunidade de aplicar os conhecimentos adquiridos em sala de aula na prática com autonomia de gestão pelos discentes, realizando projetos reais sendo uma opção acessível
+            para o mercado.
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-enactus"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Enactus: Universidade Federal de Alagoas (UFAL) </h1> 
+        <p> 
+            <a href="http://g1.globo.com/al/alagoas/bom-dia-alagoas/videos/t/edicoes/v/estudantes-da-ufal-promovem-projetos-de-solidariedade/4934677/" target="_blank">http://g1.globo.com/al/alagoas/bom-dia-alagoas/videos/t/edicoes/v/estudantes-da-ufal-promovem-projetos-de-solidariedade/4934677/</a><br/>
+           A Enactus realiza uma ação em uma comunidade circunvizinha onde eles mudaram a realidade de uma cooperativa de reciclagem de lixo e com isso
+           ganharam um prêmio internacional.
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-aiesec"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>AIESEC: YouthSpeak Forum</h1> 
+        <p> 
+            <a href="http://youthspeakbrazil.wixsite.com/ysfbrazil " target="_blank">http://youthspeakbrazil.wixsite.com/ysfbrazil </a><br/>
+            Entendendo a necessidade de olhar para os problemas do mundo e ouvir a geração capaz de construir a mudança que queremos ver, a AIESEC uniu-se à ONU,
+            em meados de 2015, e criou a iniciativa YouthSpeak, permitindo que a juventude fale e aja em prol dos Objetivos de Desenvolvimento Sustentável para 
+            2030. Como parte deste movimento, o YouthSpeak Forum é um evento que reúne jovens e sênior líderes, formando um ambiente diverso e colaborativo,
+            propício para conversas inspiradoras e construção de projetos voltados para temas globais, nacionais e locais, permitindo que os seus participantes
+            entendam e coloquem em prática suas ideias por meio de ferramentas de construção e implementação de projetos.<br/>
+            <a href="http://www.novasnoticias.com.es/news/universitarios-estrangeiros-em-escolas-publicas-no-ceara-terao-como-alvo-promover-orientacao-vocacional-atraves-do-projeto-social-da-aiesec/">
+                http://www.novasnoticias.com.es/news/universitarios-estrangeiros-em-escolas-publicas-no-ceara-terao-como-alvo-promover-orientacao-vocacional-atraves-do-projeto-social-da-aiesec/
+            </a>
+
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-csf"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Rede CsF: Núcleos e Escola de Férias </h1> 
+        <p> 
+            <a href="www.redecsf.org.br">www.redecsf.org.br</a><br/>
+            <a href="http://www.capes.gov.br/sala-de-imprensa/noticias/7972-escola-de-ferias-leva-ciencia-para-jovens-do-ensino-basico-publico" target="_blank">http://www.capes.gov.br/sala-de-imprensa/noticias/7972-escola-de-ferias-leva-ciencia-para-jovens-do-ensino-basico-publico</a><br/>
+           A Rede CsF atua de forma presencial através de Núcleos nas universidades. Formados por estudantes, professores e servidores, os Núcleos Rede CsF difundem os conhecimentos e experiências dos
+           membros e parceiros de forma integrada com universidade e comunidade local. As atividades envolvem ciência, tecnologia, inovação, educação e internacionalização. Um dos projetos de maior impacto
+           é a Escola de Férias, iniciativa que leva ciência e conteúdos práticos para jovens do ensino básico público em cidades do interior do Brasil. Para o município de Paraná/RN, no sertão Potiguar, a 
+           Escola de Férias ofereceu cursos de Design, Empreendedorismo, Robótica, Alemão, Inglês e Neurociências para mais de 300 alunos de ensino fundamental e médio.
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-turku"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Turku University (Finlândia) </h1> 
+        <p> 
+            <a href="https://www.utu.fi/en/news/articles/Pages/University-of-Turku-Strengthens-Entrepreneurship-Education-.aspx" target="_blank">https://www.utu.fi/en/news/articles/Pages/University-of-Turku-Strengthens-Entrepreneurship-Education-.aspx</a><br/>
+            <a href="http://www.smartworkresearch.fi/research-project/">http://www.smartworkresearch.fi/research-project/</a><br/>
+           Comparativamente pequena, quando comparado com os seus sistemas vizinhos, as quatro universidades finlandeses tomaram, em 2010, a decisão de construir um sistema de ensino superior
+           de universidades empreendedoras com uma nova lei e marco jurídico. Hoje, as universidades são norteadas pelo princípio de geração de conhecimento aplicado aos problemas reais no mundo.
+           Os programas oferecidas pelo Turku são todas multidisciplinares, com componentes práticas como parte do currículo. Além disso, a construção, em 2015, do consórcio SWiPE (Smart Work in Platform Economy)
+           contribui ao planejamento da educação finlandesa e as dinâmicas de empreendedorismo, e fluxo de informação e capital humana das IES a sociedade.
+        </p>
+    </div>
+    </div>
+    
+    
+    <!--       FIM DOS CASES DE EXTENSÃO             -->
+    
+    <!--       INICIO CASES DE INFRAESTRUTURA        -->
+    <div class="col-sm-12">
+     <div class="remodal" data-remodal-id="case-genesis"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Instituto Gênesis (PUC-Rio) </h1> 
+        <p> 
+            <a href="http://www.genesis.puc-rio.br/" target="_blank">http://www.genesis.puc-rio.br/</a><br/>
+           O Instituto Gênesis é uma unidade complementar da PUC-Rio, com o objetivo de transferir conhecimento da Universidade para a sociedade, por meio da
+           formação de empreendedores e da geração de empreendimentos inovadores de sucesso, contribuindo assim para a inclusão social, a preservação da cultura
+           nacional e melhoria da qualidade de vida da região onde está inserido.Com mais de 17 anos de experiência, o Instituto Gênesis da PUC-Rio presta serviços
+           para órgãos governamentais, instituições de ensino e organizações não governamentais, nacionais e internacionais. Os serviços têm como principal 
+           finalidade fomentar o desenvolvimento socioeconômico a partir de ferramentas de capacitação empreendedora, e formação de empreendedores e criação 
+           de ambientes de inovação.
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-porto"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Porto Digital</h1> 
+        <p> 
+            <a href="http://www.portodigital.org/parque/o-que-e-o-porto-digital" target="_blank">http://www.portodigital.org/parque/o-que-e-o-porto-digital </a><br/>
+            O Porto Digital é um dos principais parques tecnológicos e ambientes de inovação do Brasil e é um dos representantes da nova economia do Estado
+            de Pernambuco. Localizado no Recife, sua atuação se dá nos eixos de software e serviços de Tecnologia da Informação e Comunicação (TIC) e Economia
+            Criativa (EC), com ênfase nos segmentos de games, multimídia, cine-vídeo-animação, música, fotografia e design.O Porto Digital é fruto e referência 
+            nacional de uma ação coordenada entre governo, academia e empresas, conhecido como modelo "Triple Helix". Essa iniciativa propiciou o ambiente necessário
+            para fazer com que o Porto Digital se transformasse num dos principais ambientes de inovação do País. Atualmente, o Porto Digital abriga 250 empresas, 
+            organizações de fomento e órgãos de Governo e cerca de 7.100 trabalhadores. Desde o final de 2014, o parque também opera nas cidades de Caruaru e Petrolina,
+            localizadas respectivamente no Agreste e Sertão do Estado. O Porto Digital foi considerado pela Associação Nacional de Promotoras de Empreendimentos Inovadores
+            (Anprotec), em 2007 e 2011, o melhor parque tecnológico do Brasil. Em 2005 o ambiente foi considerado o maior do País pela A.T. Kearney.
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-educational"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Education Roaming (eduroam) </h1> 
+        <p> 
+            <a href="https://www.rnp.br/servicos/servicos-avancados/eduroam" target="_blank">https://www.rnp.br/servicos/servicos-avancados/eduroam</a><br/>
+           Principal iniciativa da Rede Nacional de Pesquisa (RNP) dedicada à questão da mobilidade, o eduroam (education roaming) é um serviço desenvolvido para a comunidade
+           internacional de educação e pesquisa que oferece acesso sem fio à internet sem a necessidade de múltiplos logins e senhas, de forma simples, rápida e segura. 
+           Lançado no Brasil em 2012, dispõe de ampla cobertura internacional e reúne instituições de mais de 60 países, unindo diversos usuários na troca de experiências
+           e conhecimento.
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-ipe"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Rede Ipê </h1> 
+        <p> 
+            <a href="https://www.rnp.br/servicos/conectividade/rede-ipe" target="_blank">https://www.rnp.br/servicos/conectividade/rede-ipe</a><br/>
+           Operada pela RNP, a rede Ipê é uma infraestrutura de rede Internet dedicada à comunidade brasileira de ensino superior e pesquisa, que interconecta universidades e
+           seus hospitais, institutos de pesquisa e instituições culturais. Inaugurada em 2005, foi a primeira rede óptica nacional acadêmica a entrar em operação na América Latina.
+           Seu backbone foi projetado para garantir não só a velocidade necessária ao tráfego de internet de aplicações básicas (navegação web, correio eletrônico e transferência de
+           arquivos), mas também ao tráfego de serviços, aplicações avançadas e projetos científicos, e à experimentação de novas tecnologias, serviços e aplicações. A infraestrutura 
+           da rede Ipê engloba 27 Pontos de Presença (PoPs), um em cada unidade da federação, além de ramificações para atender 1219 campi e unidades de instituições de ensino, pesquisa
+           e saúde em todo o país, beneficiando mais de 3,5 milhões de usuários.
+        </p>
+    </div>
+    </div>
+    
+    <!--       FIM DOS CASES DE INFRAESTRUTURA       -->
+    
+    
+    <!--       INICIO CASES DE INTERNACIONALIZAÇÃO   -->
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-UUU"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>UFV, UNICAMP e UFF: Disciplinas ministradas em inglês) </h1> 
+        <p> 
+          O inglês é o idioma universal da ciência contemporânea. A maioria das universidades na Europa, Ásia e América do Norte oferecem disciplinas
+          em idioma nativo e também, alternativamente, em inglês. Muitas até mesmo consideram o inglês como idioma oficial do Campus. O Brasil ainda 
+          tem um longo caminho a percorrer, mas exemplos como os professores Leandro Tessler (UNICAMP), Vladimir Iori (UFV) e Fábio Waltenberg (UFF)
+          são pioneiros no que diz respeito ao oferecimento de disciplinas em inglês para estudantes de graduação.
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-faubai"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Associação Brasileira de Educação Internacional (FAUBAI)</h1> 
+        <p> 
+           A FAUBAI, Associação Brasileira de Educação Internacional, criada em 1988, reúne mais de 180 gestores ou responsáveis por assuntos internacionais
+           e promove a integração e a capacitação dos gestores da área – por meio de seminários, workshops e reuniões regionais e nacionais -, além de divulgar 
+           a diversidade e as potencialidades das IES brasileiras junto às agências de fomento, representações diplomáticas, organismos e programas internacionais.
+           A FAUBAI tem a finalidade de promover o aperfeiçoamento do intercâmbio e da cooperação internacionais como instrumentos para a melhoria do ensino,
+           da pesquisa, da extensão e da administração das instituições filiadas, procurando estimular o constante aperfeiçoamento da gestão do intercâmbio e
+           da cooperação internacionais.
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-swb"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>SwB UK Ambassador </h1> 
+        <p> 
+            <a href="https://www.gov.uk/government/world-location-news/305183.pt" target="_blank">https://www.gov.uk/government/world-location-news/305183.pt</a><br/>
+           A iniciativa é organizada pela Embaixada do Reino Unido no Brasil, com apoio da Rede CsF. O concurso é destinado a ex-alunos do Ciência sem Fronteiras – 
+           Reino Unido que já retornaram ao Brasil e apresentam histórias interessantes para contar, seja sobre sua experiência no Reino Unido, ou no período de 
+           volta ao Brasil. O objetivo é divulgar os projetos e parcerias dos estudantes que, mesmo após o término de seus programas, continuam trabalhando para 
+           estabelecer e manter laços com a Grã-Bretanha. Em 2015, o vencedor foi Lucas Leung, 22 anos, estudante de Engenharia de Manufatura na UNICAMP Limeira.
+           Em 2016, a vencedora foi Luiza Negri, formada em Arquitetura pela UFOP.
+
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-ufrn-ufv-usp"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>UFRN - UFV - USP: iFriends - Exchange Fellow - Embaixadores </h1> 
+        <p> 
+            <a href="http://www.sri.ufrn.br/mobilidade_in.php?a=mi_exchange" target="_blank">http://www.sri.ufrn.br/mobilidade_in.php?a=mi_exchange</a><br/>
+           As universidades brasileiras têm participado de programas de mobilidade estudantil com instituições de ensino superior em todo o mundo e, por isso,
+           recebem diversos estudantes estrangeiros para os semestres letivos. Ser um aluno intercambista, geralmente, não é fácil. Especialmente no início,
+           quando tudo em um país estrangeiro parece distinto e complicado. A fim de facilitar a adaptação desses estudantes e promover melhoras na recepção 
+           dos mesmos, a Secretaria de Relações Internacionais (SRI/UFRN) desenvolveu o programa “Exchange Fellows”, discente voluntário da UFRN que atuará como 
+           guia de um estudante estrangeiro em mobilidade durante os seus primeiros dias no Campus. Na Universidade de São Paulo o programa USP iFriends possui
+           o mesmo propósito, bem como o projeto Embaixadores UFV na Universidade Federal de Viçosa. Estes projetos proporcionam aos estudantes um intercâmbio
+           cultural, o estabelecimento de novas amizades e até mesmo a prática de suas competências lingüísticas.
+        </p>
+    </div>
+    </div>
+    
+    <!--       FIM DOS CASES DE INTERNACIONALIZAÇÃO  -->
+    
+    
+    <!--       INICO DOS CASES DE CAPITAL FINANCEIRO -->
+    <div class="col-sm-12">
+     <div class="remodal" data-remodal-id="case-uspfin"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Universidade de São Paulo: Programa Parceiros da USP </h1> 
+        <p> 
+            <a href="http://www.leginf.usp.br/?resolucao=resolucao-no-7157-de-10-de-dezembro-de-2015" target="_blank">http://www.leginf.usp.br/?resolucao=resolucao-no-7157-de-10-de-dezembro-de-2015</a><br/>
+            Foi criada uma Resolução que facilita o processo doações de empresas e ex-alunos para a universidade.
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-unisp"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Universidade de São Paulo: Amigos da Poli)</h1> 
+        <p> 
+            <a href="https://amigosdapoli.com.br/" target="_blank">https://amigosdapoli.com.br/</a><br/>
+            O Fundo Patrimonial Amigos da Poli é uma associação que visa captar doações e aplicar os recursos oriundos desta captação em projetos na Poli, sendo sempre observadas as melhores práticas
+            de governança e transparência e com foco na perpetuidade e manutenção do capital doado.
+
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-sm-12">
+    <div class="remodal" data-remodal-id="case-harvard"> 
+        <button data-remodal-action=close class="remodal-close"></button> 
+        <h1>Harvard University: Investimento sustentável </h1> 
+        <p> 
+            <a href="http://www.hmc.harvard.edu/" target="_blank">http://www.hmc.harvard.edu/</a><br/>
+           A universidade possui uma estratégia financeira focada em investimento sustentável. O planejamento possui três prioridades:
+           1. integração de fatores ambientais, sociais e de governança (ESG)- diligência, análise de investimento, monitoramento e gestão de ativos;
+           2. Participação ativa - exercer o direito de voto aos acionistas e manter um diálogo sobre os riscos dos fatores ESG;
+           3. Colaboração - trabalho junto a investidores globais e fundos de endowment para desenvolver e definir as melhores práticas de investimento sustentável.
+           Esta abordagem é refletida no compromisso da instituição com os Princípios para Investimento Responsável (PRI), uma iniciativa apoiada pela Organização das Nações Unidas (ONU).
+           Acredita-se que esta estratégia permitirá a manutenção e expansão da proeminência em ensino, aprendizagem e pesquisa para gerações futuras.
+
+
+        </p>
+    </div>
+    </div>
+
+  <!-- Fim dos coteúdos alternantes-->
+  
+  <!--   INICIO DO CONTEUDO DE CADA INDICADOR    -->
+         <!--CULTURA EMPREENDEDORA-->
+         <div id="culturaEmpreendedora">
+          <div class="row textos">
+              <div class="col-sm-12 " >
+                    
+                   <h1>Cultura Empreendedora</h1>
+                      <p> CULTURA EMPREENDEDORA: Universidade Federal de Pernambuco(UFRPE)</p>
+                      <p><strong>Indicadores:</strong></p>
+                      <ul>
+                          <li>Postura Empreendedora Discente</li>
+                          <li>Postura Empreendedora Docente</li>
+                          <li>DIsciplinas de Empreendedorismo</li>
+                      </ul>
+                      <p>
+                          Postura empreendedora e disciplinas de empreendedorismo: foram selecionados na Pesquisa
+                          de Percepção como os fatores que mais influenciam para a universidade ser empreendedora.
+                          E por isso eles receberam os mesmos pesos;
+                      </p>
+                      <p>
+                          Disciplinas de empreendedorismo: esse indicador foi mensurado a partir da razão entre o
+                          número absoluto de disciplinas de empreendedorismo dividido pelo número de cursos.
+                          A IES que possuía a maior razão recebeu a nota 10, sendo as notas das demais IES 
+                          normalizadas a partir do maior valor de referência;
+                      </p>
+                      <p>
+                          Postura empreendedora discente e docente: esse indicador foi mensurado a partir da pesquisa
+                          de coleta de dados difundida em cada universidade sob a perspectiva discente. <br/>
+                          <a href="#fluxograma-cultura">Ver Fluxograma</a>
+                      </p>
+                      
+                      
+                      <table id="culuraEmpreendedora" class="table table-striped table-bordered" cellspacing="0" width="80%">
+                          <thead>
+                              <tr>
+                                  <th>Posição</th>
+                                  <th>IES</th>
+                                  <th>UF</th>
+                                  <th>Tipo de IES</th>
+                                  <th>Nota</th>
+                                  <th>Postura Discente</th>
+                                  <th>Postura Docente</th>
+                                  <th>Disciplinas</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                                {% for universidade in univ_cultura %}
+  
+                                <tr>
+                                  <th>{{ forloop.counter }}</th>
+                                  <th>{{ universidade.nome }}</th> 
+                                  <th>{{ universidade.uf }}</th>
+                                  <th>{{ universidade.tipo_ie }}</th>
+                                  <th>{{ universidade.nota_cult_emp }}</th>
+                                  <th>{{ universidade.postura_discente_ce }}</th>
+                                  <th>{{ universidade.postura_docente_ce }}</th>
+                                  <th>{{ universidade.disciplinas }}</th>
+                                </tr>
+
+                                {% endfor %}
+                          </tbody>
+                      </table>
+
+                  
+              </div>
+          </div>
+        <div class="row">
+            <h1>Cases de Sucesso</h1><br/>
+            <div class="col-sm-4">
+                <a href="#case-ufrn">
+                    <img src="{% static 'images/LogosCases/CulturaEmpreendedora/UFRN.png' %}" alt=""/>
+                </a>  
+            </div>
+            <div class="col-sm-4">
+                <a href="#case-singapura">
+                  <img src="{% static 'images/LogosCases/CulturaEmpreendedora/NUS.jpg' %}" alt=""/>  
+                </a>  
+            </div>
+            <div class="col-sm-4">
+                <a href="#case-stanford">
+                    <img src="{% static 'images/LogosCases/CulturaEmpreendedora/stanford.png' %}" alt=""/> 
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="#case-katholieke">
+                    <img src="{% static 'images/LogosCases/CulturaEmpreendedora/KULeuven.jpg' %}" alt=""/> 
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#case-arizona">
+                    <img src="{% static 'images/LogosCases/CulturaEmpreendedora/asut.png' %}" alt=""/> 
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#case-coursera">
+                    <img src="{% static 'images/LogosCases/CulturaEmpreendedora/Coursera.png' %}" alt=""/> 
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="#case-california">
+                    <img src="{% static 'images/LogosCases/CulturaEmpreendedora/california.png' %}" alt=""/> 
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-mit">
+                    <img src="{% static 'images/LogosCases/CulturaEmpreendedora/MITlogo.png' %}" alt=""/> 
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-rice">
+                    <img src="{% static 'images/LogosCases/CulturaEmpreendedora/rice.png' %}" alt=""/> 
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-babson">
+                    <img src="{% static 'images/LogosCases/CulturaEmpreendedora/babson.png' %}" alt=""/> 
+                </a>
+            </div>
+        </div>
+    </div>
+    
+     <!--INOVAÇÃO-->
+     <div id="Inovacao">
+      <div class="row textos">
+              <div class="col-sm-12 ">
+           
+                    
+                   <h1>Inovação</h1>
+                      <p> INOVAÇÂO: Universidade Federal do Ceará (UFC)</p>
+                      <p><strong>Indicadores:</strong></p>
+                      <ul>
+                          <li>Pesquisa</li>
+                          <li>Patentes</li>
+                          <li>Proximidade IES-Empresa(incubadoras)</li>
+                      </ul>
+                      <p>
+                          O indicador Proximidade IES-Empresa foi um dos mais bem ranqueados na Pesquisa de Percepção
+                          a despeito dos indicadores pesquisa e patentes e por isso recebeu peso 02 no processo de elaboração do ranking. 
+                      </p>
+                      <p>
+                          Proximidade IES-Empresa: foi mensurado a partir do número de empresas incubadas para cada 1000 alunos na universidade.
+                      </p>
+                      <p>
+                          Pesquisa e patentes: foram extraídos do Ranking Universitário da Folha (RUF).<br/>
+                          <a href="#fluxograma-inovacao">Ver fluxograma</a>
+                      </p>
+                      
+                      <table id="Inovacaot" class="table table-striped table-bordered" cellspacing="0" width="80%">
+                          <thead>
+                              <tr>
+                                  <th>Posição</th>
+                                  <th>IES</th>
+                                  <th>UF</th>
+                                  <th>Tipo de IES</th>
+                                  <th>Nota</th>
+                                  <th>Pesquisa</th>
+                                  <th>Patentes</th>
+                                  <th>Incubadas</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              {% for universidade in univ_inovacao %}
+  
+                                <tr>
+                                  <th>{{ forloop.counter }}</th>
+                                  <th>{{ universidade.nome }}</th> 
+                                  <th>{{ universidade.uf }}</th>
+                                  <th>{{ universidade.tipo_ie }}</th>
+                                  <th>{{ universidade.nota_inovacao }}</th>
+                                  <th>{{ universidade.pesquisa_inovacao }}</th>
+                                  <th>{{ universidade.patentes_inovacao }}</th>
+                                  <th>{{ universidade.incubadas_inovacao }}</th>
+                                </tr>
+
+                                {% endfor %}
+                          </tbody>
+                      </table>
+
+                  
+              </div>
+          </div>
+        <div class="row">
+            <h1>Cases de Sucesso</h1><br/>
+            <div class="col-sm-3">
+                <a href="#case-waterloo">
+                    <img src="{% static 'images/LogosCases/Inovacao/waterloo.png' %}" alt=""/>
+                </a>  
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-usp">
+                    <img src="{% static 'images/LogosCases/Inovacao/auspin.jpg' %}" alt=""/>
+                </a>  
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-vicosa">
+                    <img src="{% static 'images/LogosCases/Inovacao/ufv.png' %}" alt=""/>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-capes">
+                    <img src="{% static 'images/LogosCases/Inovacao/logoIBICT.png' %}" alt=""/>
+                </a>
+            </div>
+        </div>
+     </div>   
+     <!--FIM INOVAÇÃO-->
+     
+     <!--INICIO EXTENSAO-->
+     <div id="Extensao">
+         <div class="row textos">
+              <div class="col-sm-12 " id="c">
+           
+                    
+                   <h1>Extensão</h1>
+                      <p> EXTENSÃO: Universidade de São Paulo (USP)</p>
+                      <p><strong>Indicadores:</strong></p>
+                      <ul>
+                          <li>Redes</li>
+                          <li>Projetos de Extensão</li>
+                      </ul>
+                      <p>
+                          As redes são entendidas como as organizações estudantis com representatividade nacional: Aiesec, Brasil Júnior, Enactus
+                          e Rede CsF. Este critério foi o mais bem elencado na Pesquisa de Percepção e por isso recebeu peso 03;
+                      </p>
+                      <p>
+                          Proximidade IES-Empresa: foi mensurado a partir do número de empresas incubadas para cada 1000 alunos na universidade.<br/>
+                          <a href="#fluxograma-extensao">Ver fluxograma</a>
+                      </p>
+                      
+                      <table id="Extensaot" class="table table-striped table-bordered" cellspacing="0" width="80%">
+                          <thead>
+                              <tr>
+                                  <th>Posição</th>
+                                  <th>IES</th>
+                                  <th>UF</th>
+                                  <th>Tipo de IES</th>
+                                  <th>Nota</th>
+                                  <th>Redes</th>
+                                  <th>Projetos</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                          {% for universidade in univ_extensao %}
+
+                            <tr>
+                              <th>{{ forloop.counter }}</th>
+                              <th>{{ universidade.nome }}</th> 
+                              <th>{{ universidade.uf }}</th>
+                              <th>{{ universidade.tipo_ie }}</th>
+                              <th>{{ universidade.nota_extensao }}</th>
+                              <th>{{ universidade.redes_extensao }}</th>
+                              <th>{{ universidade.projetos_extensao }}</th>
+                            </tr>
+
+                            {% endfor %}
+                          </tbody>
+                      </table>
+
+                  
+              </div>
+          </div>
+        <div class="row images">
+            <h1>Cases de Sucesso</h1><br/>
+            <div class="col-sm-3">
+                <a href="#case-enactus">
+                    <img src="{% static 'images/LogosCases/Extensao/enactus.png' %}" alt=""/>
+                </a>  
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-aiesec">
+                    <img src="{% static 'images/LogosCases/Extensao/AIESEC.png' %}" alt=""/>
+                </a>  
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-csf">
+                    <img src="{% static 'images/LogosCases/Extensao/CsF.png' %}" alt=""/>
+                </a>  
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-turku">
+                    <img src="{% static 'images/LogosCases/Extensao/turku.png' %}" alt=""/>
+                </a>
+            </div>
+        </div>
+
+     </div>
+     <!--FIM EXTENSAO-->
+     
+     <!--INICIO INFRAESTRUTURA-->
+     <div id="Infraestrutura">
+         <div class="row textos">
+              <div class="col-sm-12 " id="c">
+           
+                    
+                   <h1>Infraestrutura</h1>
+                      <p> INFRAESTRUTURA: Pontifícia Universidade Católica do Rio de Janeiro (PUC-RIO)</p>
+                      <p><strong>Indicadores:</strong></p>
+                      <ul>
+                          <li>Qualidade</li>
+                          <li>Parque Tecnológico</li>
+                      </ul>
+                      <p>
+                          Infraestrutura foi um dos fatores mais bem avaliados para a universidade ser empreendedora conforme a Pesquisa de Percepção,
+                          sendo considerado tanto a qualidade da infraestrutura (salas de aula, biblioteca, laboratório de informática e pesquisa,
+                          espaços abertos, transporte e internet), bem como parques tecnológicos.
+                      </p>
+                      <p>
+                          A nota do indicador Parque Tecnológico foi composta a partir de duas informações binárias (sim/não):
+                      </p>
+                      <ul>
+                          <li>1.1. Instalação de Parque Tecnológico na cidade da IES(5 pontos);</li>
+                          <li>1.2.Existência de parceria, associação ou convênio entre a IES e o Parque Tecnológico da cidade (5 pontos)</li>
+                      </ul>
+                      <p>
+                         A nota de Qualidade, por sua vez, foi calculada a partir da avaliação da percepção dos discentes sobre a infraestrutura física e disponibilidade/velocidade da internet em sua instituição: 
+                      </p>
+                      <ul>
+                          <li>2.1. Infraestrutura Física (7 pontos)</li>
+                          <li>2.2. Internet (3 pontos)</li>
+                      </ul>
+                      <p><a href="#fluxograma-infraestrutura">Ver fluxograma</a></p>
+                      <table id="InfraestruturaT" class="table table-striped table-bordered" cellspacing="0" width="80%">
+                          <thead>
+                              <tr>
+                                  <th>Posição</th>
+                                  <th>IES</th>
+                                  <th>UF</th>
+                                  <th>Tipo de IES</th>
+                                  <th>Nota</th>
+                                  <th>Qualidade</th>
+                                  <th>Parque Tecnológico</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                          {% for universidade in univ_infraestrutura %}
+
+                            <tr>
+                              <th>{{ forloop.counter }}</th>
+                              <th>{{ universidade.nome }}</th> 
+                              <th>{{ universidade.uf }}</th>
+                              <th>{{ universidade.tipo_ie }}</th>
+                              <th>{{ universidade.nota_infraestrutura }}</th>
+                              <th>{{ universidade.qualidade_infra }}</th>
+                              <th>{{ universidade.parque_tecno_infra }}</th>
+                            </tr>
+
+                          {% endfor %}
+                          </tbody>
+                      </table>
+
+                  
+              </div>
+          </div>
+        <div class="row">
+            <h1>Cases de Sucesso</h1><br/>
+            <div class="col-sm-3">
+                <a href="#case-genesis">
+                    <img src="{% static 'images/LogosCases/Infraestrutura/genesis.png' %}" alt=""/>
+                </a>  
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-porto">
+                    <img src="{% static 'images/LogosCases/Infraestrutura/portodigital.png' %}" alt=""/>
+                </a>  
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-educational">
+                    <img src="{% static 'images/LogosCases/Infraestrutura/eduroam.png' %}" alt=""/>
+                </a>  
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-ipe">
+                    <img src="{% static 'images/LogosCases/Infraestrutura/redeipe.jpg' %}" alt=""/>
+                </a>  
+            </div>
+        </div>
+
+
+
+     </div>
+     <!--FIM INFRAESTRUTURA-->
+     
+     <!--INICIO INTERNAACIONALIZACAO-->
+     <div id="Internacionalizacao">
+         <div class="row textos">
+              <div class="col-sm-12 " id="c">
+           
+                    
+                   <h1>Internacionalização</h1>
+                      <p> INTERNACIONALIZAÇÃO: Universidade Estadual de Campinas (UNICAMP))</p>
+                      <p><strong>Indicadores:</strong></p>
+                      <ul>
+                          <li>Intercâmbio</li>
+                          <li>Pesquisas Internacionais</li>
+                      </ul>
+                      <p>
+                         Pesquisas internacionais: indicador mensurado pelo Ranking Universitário da Folha, contemplando a nota de citações internacionais por docente e 
+                         publicações em coautoria internacional.
+                      </p>
+                      <p>
+                          Intercâmbio: indicador coletado pelos embaixadores de cada universidade, medido através do número de intercâmbios internacionais (OUT) realizados pela universidade e dividido pelo número de alunos. 
+                          Ambos indicadores possuem os mesmos pesos.<br/>
+                          <a href="#fluxograma-internacionalizacao">Ver fluxograma</a>
+                      </p>
+                      
+                      <table id="Internacionalizacaot" class="table table-striped table-bordered" cellspacing="0" width="80%">
+                          <thead>
+                              <tr>
+                                  <th>Posição</th>
+                                  <th>IES</th>
+                                  <th>UF</th>
+                                  <th>Tipo de IES</th>
+                                  <th>Nota</th>
+                                  <th>Intercâmbio</th>
+                                  <th>Pesquisas Internacionais</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            {% for universidade in univ_internacionalizao %}
+
+                            <tr>
+                              <th>{{ forloop.counter }}</th>
+                              <th>{{ universidade.nome }}</th> 
+                              <th>{{ universidade.uf }}</th>
+                              <th>{{ universidade.tipo_ie }}</th>
+                              <th>{{ universidade.nota_infraestrutura }}</th>
+                              <th>{{ universidade.qualidade_infra }}</th>
+                              <th>{{ universidade.parque_tecno_infra }}</th>
+                            </tr>
+
+                            {% endfor %}
+                          </tbody>
+                      </table>
+
+                  
+              </div>
+          </div>
+        <div class="row">
+            <h1>Cases de Sucesso</h1><br/>
+            <div class="col-sm-3">
+                <a href="#case-UUU">
+                    <img src="{% static 'images/LogosCases/Internacionalizacao/ufv-uff-uni.png' %}" alt=""/>
+                </a>  
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-faubai">
+                    <img src="{% static 'images/LogosCases/Internacionalizacao/FAUBAI.png' %}" alt=""/>
+                </a>  
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-swb">
+                    <img src="{% static 'images/LogosCases/Internacionalizacao/UK.png' %}" alt=""/>
+                </a>  
+            </div>
+            <div class="col-sm-3">
+                <a href="#case-ufrn-ufv-usp">
+                    <img src="{% static 'images/LogosCases/Internacionalizacao/ufrn-ufv-usp.png' %}" alt=""/>
+                </a>  
+            </div>
+        </div>
+
+
+
+     </div>
+     <!--FIM INTERNACIONALIZACAO-->
+     
+     <!--INICIO CAPITAL FINANCEIRO-->
+     <div id="CapitalFinanceiro">
+         <div class="row textos">
+              <div class="col-sm-12 " id="c">
+           
+                    
+                   <h1>Capital Financeiro</h1>
+                      <p> CAPITAL FINANCEIRO: Universidade Estadual de Campinas (UNICAMP)</p>
+                      <p><strong>Indicadores:</strong></p>
+                      <ul>
+                          <li>Orçamento</li>
+                          <li>Fundos patrimoniais (endowment)</li>
+                      </ul>
+                      <p>
+                          <strong>Orçamento:</strong> os dados orçamentários das instituições públicas foi coletado pelo portal da transparência da União e dos Estados,
+                          a partir da receita global das instituições. Os dados orçamentários instituições privadas foi solicitado e coletado pelos 
+                          embaixadores e apenas a PUC RIO forneceu os dados. A partir do valor global, foi dividido pelo número de alunos.
+                      </p>
+                      <p>
+                          <strong>Endowment:</strong> Os endowments constituem um fundo patrimonial mantido pela sociedade civil que visa a perpetuidade das instituições.
+                          É um interessante estímulo para nossas IES que vivem com dificuldades financeiras, sendo uma nova forma de receita.Pela incipiência
+                          e pouca influência dos fundos patrimoniais nas Universidades brasileiras este recebeu peso 01, enquanto o orçamento recebeu peso 3.
+                          Estes dados foram coletados pelos embaixadores e apenas a USP possui esta fonte de receita.<br/>
+                          <a href="#fluxograma-capital">Ver fluxograma</a>
+                      </p>
+                      
+                      <table id="capitalFinanceiro" class="table table-striped table-bordered" cellspacing="0" width="80%">
+                          <thead>
+                              <tr>
+                                  <th>Posição</th>
+                                  <th>IES</th>
+                                  <th>UF</th>
+                                  <th>Tipo de IES</th>
+                                  <th>Nota</th>
+                                  <th>Orçamento</th>
+                                  <th>Endowment</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            {% for universidade in univ_capital %}
+
+                            <tr>
+                              <th>{{ forloop.counter }}</th>
+                              <th>{{ universidade.nome }}</th> 
+                              <th>{{ universidade.uf }}</th>
+                              <th>{{ universidade.tipo_ie }}</th>
+                              <th>{{ universidade.nota_capital_financeiro }}</th>
+                              <th>{{ universidade.orcamento_cap }}</th>
+                              <th>{{ universidade.endowment_cap }}</th>
+                            </tr>
+
+                            {% endfor %}
+                          </tbody>
+                      </table>
+
+                  
+              </div>
+          </div>
+
+        <div class="row">
+            <h1>Cases de Sucesso</h1><br/>
+            <div class="col-sm-4">
+                <a href="#case-uspfin">
+                    <img src="{% static 'images/LogosCases/CapitalFinanceiro/usp-logo.png' %}" alt="" />
+                </a>  
+            </div>
+            <div class="col-sm-4">
+                <a href="#case-unisp">
+                    <img src="{% static 'images/LogosCases/CapitalFinanceiro/amigos.png' %}" alt="" />
+                </a>  
+            </div>
+            <div class="col-sm-4">
+                <a href="#case-harvard">
+                    <img src="{% static 'images/LogosCases/CapitalFinanceiro/harvard.png' %}" alt="" />
+                </a>
+            </div>
+        </div>
+
+     </div>
+     <!--FIM CAPITAL FINANCEIRO-->
+  
+  
+ 
+  
+   <footer id="footer">
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+              <p>Copyright &copy; 2016 BRENT. Todos os direitos reservados - Produzido por <a href="http://site.ejectufrn.com.br/" target="_blank">EJECT</a></p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="{% static 'js/jquery.inview.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/mousescroll.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/smoothscroll.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/jquery.countTo.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/lightbox.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+  <!-- vindos do site do imd-->
+  <script type="text/javascript" src="{% static 'js/maini.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/vendor.js' %}"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+  <script type="text/javascript" src="{% static 'js/tabela.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/Conteudo.js' %}"></script>
+
+
+</body>
+</html>

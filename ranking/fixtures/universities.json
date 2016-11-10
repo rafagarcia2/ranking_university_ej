@@ -1,0 +1,210 @@
+[{
+	"model": "ranking.University",
+	"pk": 1, 
+	"fields": {"codigo":"39","nome":"Universidade de São Paulo (USP)","uf":"SP","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":7.67,"nota_cult_emp":5.92,"postura_discente_ce":7.86,"postura_docente_ce":5.74,"disciplinas":4.15,"nota_inovacao":7.95,"pesquisa_inovacao":9.85,"patentes_inovacao":10.00,"incubadas_inovacao":5.98,"nota_extensao":8.10,"redes_extensao":7.86,"projetos_extensao":8.83,"nota_infraestrutura":8.54,"qualidade_infra":7.09,"parque_tecno_infra":10.00,"nota_internacionalizao":8.68,"intercambio_inter":8.08,"pesquisas_inter":9.28,"nota_capital_financeiro":7.00,"orcamento_cap":6.00,"endowment_cap":10.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 2, 
+	"fields": {"codigo":"40","nome":"Universidade Estadual de Campinas (UNICAMP)","uf":"SP","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":6.91,"nota_cult_emp":4.95,"postura_discente_ce":7.58,"postura_docente_ce":5.85,"disciplinas":1.42,"nota_inovacao":6.48,"pesquisa_inovacao":9.78,"patentes_inovacao":9.93,"incubadas_inovacao":3.11,"nota_extensao":5.70,"redes_extensao":5.38,"projetos_extensao":6.67,"nota_infraestrutura":8.99,"qualidade_infra":7.98,"parque_tecno_infra":10.00,"nota_internacionalizao":9.33,"intercambio_inter":10.00,"pesquisas_inter":8.65,"nota_capital_financeiro":7.50,"orcamento_cap":10.00,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 3, 
+	"fields": {"codigo":"03","nome":"Universidade Estadual de Feira de Santana (UEFS)","uf":"BA","regiao":"Nordeste","tipo_ie":"Pública","nota_geral":2.89,"nota_cult_emp":4.44,"postura_discente_ce":6.98,"postura_docente_ce":5.22,"disciplinas":1.13,"nota_inovacao":2.31,"pesquisa_inovacao":6.90,"patentes_inovacao":2.35,"incubadas_inovacao":0.00,"nota_extensao":1.75,"redes_extensao":1.77,"projetos_extensao":1.69,"nota_infraestrutura":2.64,"qualidade_infra":5.28,"parque_tecno_infra":0.00,"nota_internacionalizao":4.55,"intercambio_inter":1.50,"pesquisas_inter":7.60,"nota_capital_financeiro":2.08,"orcamento_cap":2.78,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 4, 
+	"fields": {"codigo":"28","nome":"Pontifícia Universidade Católica do Rio de Janeiro (PUC-RIO)","uf":"RJ","regiao":"Sudeste","tipo_ie":"Privada","nota_geral":6.30,"nota_cult_emp":6.47,"postura_discente_ce":6.42,"postura_docente_ce":7.73,"disciplinas":5.28,"nota_inovacao":7.74,"pesquisa_inovacao":8.69,"patentes_inovacao":7.50,"incubadas_inovacao":7.39,"nota_extensao":3.11,"redes_extensao":2.81,"projetos_extensao":4.00,"nota_infraestrutura":9.05,"qualidade_infra":8.11,"parque_tecno_infra":10.00,"nota_internacionalizao":7.92,"intercambio_inter":6.67,"pesquisas_inter":9.18,"nota_capital_financeiro":2.33,"orcamento_cap":3.10,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 5, 
+	"fields": {"codigo":"42","nome":"Universidade Federal de São Carlos (UFSCAR)","uf":"SP","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":6.25,"nota_cult_emp":4.55,"postura_discente_ce":7.54,"postura_docente_ce":5.23,"disciplinas":0.90,"nota_inovacao":6.40,"pesquisa_inovacao":9.31,"patentes_inovacao":8.98,"incubadas_inovacao":3.66,"nota_extensao":7.65,"redes_extensao":6.87,"projetos_extensao":10.00,"nota_infraestrutura":8.36,"qualidade_infra":6.73,"parque_tecno_infra":10.00,"nota_internacionalizao":6.20,"intercambio_inter":4.00,"pesquisas_inter":8.40,"nota_capital_financeiro":2.42,"orcamento_cap":3.22,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 6, 
+	"fields": {"codigo":"07","nome":"Universidade Federal do Ceará (UFC)","uf":"CE","regiao":"Nordeste","tipo_ie":"Pública","nota_geral":6.10,"nota_cult_emp":6.17,"postura_discente_ce":7.89,"postura_docente_ce":5.22,"disciplinas":5.40,"nota_inovacao":9.54,"pesquisa_inovacao":9.09,"patentes_inovacao":9.08,"incubadas_inovacao":10.00,"nota_extensao":2.64,"redes_extensao":3.44,"projetos_extensao":0.24,"nota_infraestrutura":8.26,"qualidade_infra":6.53,"parque_tecno_infra":10.00,"nota_internacionalizao":4.46,"intercambio_inter":0.00,"pesquisas_inter":8.93,"nota_capital_financeiro":3.29,"orcamento_cap":4.39,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 7, 
+	"fields": {"codigo":"15","nome":"Universidade Federal de Minas Gerais (UFMG)","uf":"MG","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":6.09,"nota_cult_emp":6.77,"postura_discente_ce":7.09,"postura_docente_ce":6.02,"disciplinas":7.21,"nota_inovacao":5.34,"pesquisa_inovacao":9.49,"patentes_inovacao":9.85,"incubadas_inovacao":1.01,"nota_extensao":5.66,"redes_extensao":6.38,"projetos_extensao":3.48,"nota_infraestrutura":8.47,"qualidade_infra":6.94,"parque_tecno_infra":10.00,"nota_internacionalizao":5.04,"intercambio_inter":1.18,"pesquisas_inter":8.90,"nota_capital_financeiro":3.43,"orcamento_cap":4.58,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 8, 
+	"fields": {"codigo":"19","nome":"Universidade Federal de Viçosa (UFV)","uf":"MG","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":6.04,"nota_cult_emp":5.62,"postura_discente_ce":7.62,"postura_docente_ce":5.74,"disciplinas":3.49,"nota_inovacao":5.66,"pesquisa_inovacao":8.70,"patentes_inovacao":9.15,"incubadas_inovacao":2.39,"nota_extensao":6.53,"redes_extensao":7.21,"projetos_extensao":4.50,"nota_infraestrutura":8.24,"qualidade_infra":6.47,"parque_tecno_infra":10.00,"nota_internacionalizao":4.57,"intercambio_inter":2.41,"pesquisas_inter":6.73,"nota_capital_financeiro":3.71,"orcamento_cap":4.95,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 9, 
+	"fields": {"codigo":"33","nome":"Universidade Federal de Santa Maria (UFSM)","uf":"RS","regiao":"Sul","tipo_ie":"Pública","nota_geral":6.03,"nota_cult_emp":5.86,"postura_discente_ce":7.29,"postura_docente_ce":6.12,"disciplinas":4.18,"nota_inovacao":6.62,"pesquisa_inovacao":8.69,"patentes_inovacao":8.45,"incubadas_inovacao":4.67,"nota_extensao":5.22,"redes_extensao":6.27,"projetos_extensao":2.06,"nota_infraestrutura":8.43,"qualidade_infra":6.86,"parque_tecno_infra":10.00,"nota_internacionalizao":4.61,"intercambio_inter":2.10,"pesquisas_inter":7.13,"nota_capital_financeiro":3.39,"orcamento_cap":4.52,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 10, 
+	"fields": {"codigo":"25","nome":"Universidade Estadual de Maringá (UEM)","uf":"PR","regiao":"Sul","tipo_ie":"Pública","nota_geral":5.87,"nota_cult_emp":4.86,"postura_discente_ce":7.77,"postura_docente_ce":5.49,"disciplinas":1.32,"nota_inovacao":7.64,"pesquisa_inovacao":8.29,"patentes_inovacao":8.68,"incubadas_inovacao":6.80,"nota_extensao":5.54,"redes_extensao":6.23,"projetos_extensao":3.48,"nota_infraestrutura":7.97,"qualidade_infra":5.95,"parque_tecno_infra":10.00,"nota_internacionalizao":4.28,"intercambio_inter":2.41,"pesquisas_inter":6.15,"nota_capital_financeiro":2.36,"orcamento_cap":3.15,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 11, 
+	"fields": {"codigo":"35","nome":"Universidade Federal do Rio Grande do Sul (UFRGS)","uf":"RS","regiao":"Sul","tipo_ie":"Pública","nota_geral":5.85,"nota_cult_emp":4.53,"postura_discente_ce":7.65,"postura_docente_ce":4.88,"disciplinas":1.06,"nota_inovacao":5.76,"pesquisa_inovacao":9.61,"patentes_inovacao":9.70,"incubadas_inovacao":1.87,"nota_extensao":6.24,"redes_extensao":6.49,"projetos_extensao":5.48,"nota_infraestrutura":7.99,"qualidade_infra":5.98,"parque_tecno_infra":10.00,"nota_internacionalizao":6.41,"intercambio_inter":4.32,"pesquisas_inter":8.50,"nota_capital_financeiro":3.02,"orcamento_cap":4.03,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 12, 
+	"fields": {"codigo":"38","nome":"Universidade Federal de Santa Catarina (UFSC)","uf":"SC","regiao":"Sul","tipo_ie":"Pública","nota_geral":5.80,"nota_cult_emp":6.13,"postura_discente_ce":7.58,"postura_docente_ce":5.57,"disciplinas":5.23,"nota_inovacao":6.74,"pesquisa_inovacao":9.19,"patentes_inovacao":9.45,"incubadas_inovacao":4.15,"nota_extensao":2.51,"redes_extensao":2.86,"projetos_extensao":1.45,"nota_infraestrutura":8.29,"qualidade_infra":6.57,"parque_tecno_infra":10.00,"nota_internacionalizao":7.52,"intercambio_inter":6.57,"pesquisas_inter":8.48,"nota_capital_financeiro":3.19,"orcamento_cap":4.26,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 13, 
+	"fields": {"codigo":"21","nome":"Universidade Federal do Pará (UFPA)","uf":"PA","regiao":"Norte","tipo_ie":"Pública","nota_geral":5.50,"nota_cult_emp":6.54,"postura_discente_ce":7.99,"postura_docente_ce":6.00,"disciplinas":5.62,"nota_inovacao":4.57,"pesquisa_inovacao":7.88,"patentes_inovacao":8.20,"incubadas_inovacao":1.10,"nota_extensao":5.34,"redes_extensao":6.69,"projetos_extensao":1.27,"nota_infraestrutura":8.01,"qualidade_infra":6.03,"parque_tecno_infra":10.00,"nota_internacionalizao":4.04,"intercambio_inter":0.00,"pesquisas_inter":8.08,"nota_capital_financeiro":2.06,"orcamento_cap":2.74,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 14, 
+	"fields": {"codigo":"41","nome":"Universidade Estadual Paulista Júlio de Mesquita Filho (UNESP)","uf":"SP","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":5.49,"nota_cult_emp":4.45,"postura_discente_ce":7.64,"postura_docente_ce":5.56,"disciplinas":0.13,"nota_inovacao":5.06,"pesquisa_inovacao":9.50,"patentes_inovacao":9.53,"incubadas_inovacao":0.61,"nota_extensao":4.89,"redes_extensao":5.40,"projetos_extensao":3.37,"nota_infraestrutura":8.00,"qualidade_infra":6.01,"parque_tecno_infra":10.00,"nota_internacionalizao":5.75,"intercambio_inter":3.32,"pesquisas_inter":8.18,"nota_capital_financeiro":4.34,"orcamento_cap":5.79,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 15, 
+	"fields": {"codigo":"14","nome":"Universidade Federal de Lavras (UFLA)","uf":"MG","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":5.38,"nota_cult_emp":5.66,"postura_discente_ce":8.22,"postura_docente_ce":6.36,"disciplinas":2.40,"nota_inovacao":5.69,"pesquisa_inovacao":8.34,"patentes_inovacao":8.28,"incubadas_inovacao":3.07,"nota_extensao":3.08,"redes_extensao":3.84,"projetos_extensao":0.77,"nota_infraestrutura":8.91,"qualidade_infra":7.82,"parque_tecno_infra":10.00,"nota_internacionalizao":4.45,"intercambio_inter":2.90,"pesquisas_inter":6.00,"nota_capital_financeiro":2.69,"orcamento_cap":3.59,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 16, 
+	"fields": {"codigo":"22","nome":"Universidade Federal de Pernambuco (UFPE)","uf":"PE","regiao":"Nordeste","tipo_ie":"Pública","nota_geral":5.31,"nota_cult_emp":5.20,"postura_discente_ce":7.65,"postura_docente_ce":5.31,"disciplinas":2.64,"nota_inovacao":4.66,"pesquisa_inovacao":8.71,"patentes_inovacao":9.30,"incubadas_inovacao":0.32,"nota_extensao":4.85,"redes_extensao":6.08,"projetos_extensao":1.14,"nota_infraestrutura":7.97,"qualidade_infra":5.94,"parque_tecno_infra":10.00,"nota_internacionalizao":5.10,"intercambio_inter":2.37,"pesquisas_inter":7.83,"nota_capital_financeiro":2.64,"orcamento_cap":3.52,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 17, 
+	"fields": {"codigo":"11","nome":"Universidade Federal de Goiás (UFG)","uf":"GO","regiao":"Centro-Oeste","tipo_ie":"Pública","nota_geral":5.30,"nota_cult_emp":5.87,"postura_discente_ce":7.43,"postura_docente_ce":5.52,"disciplinas":4.66,"nota_inovacao":6.67,"pesquisa_inovacao":8.29,"patentes_inovacao":7.98,"incubadas_inovacao":5.21,"nota_extensao":1.73,"redes_extensao":2.04,"projetos_extensao":0.78,"nota_infraestrutura":8.17,"qualidade_infra":6.34,"parque_tecno_infra":10.00,"nota_internacionalizao":5.22,"intercambio_inter":3.60,"pesquisas_inter":6.85,"nota_capital_financeiro":2.94,"orcamento_cap":3.92,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 18, 
+	"fields": {"codigo":"7","nome":"Universidade Federal do Rio de Janeiro (UFRJ)","uf":"RJ","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":5.20,"nota_cult_emp":4.08,"postura_discente_ce":7.00,"postura_docente_ce":5.25,"disciplinas":0.00,"nota_inovacao":5.80,"pesquisa_inovacao":9.73,"patentes_inovacao":9.60,"incubadas_inovacao":1.94,"nota_extensao":3.53,"redes_extensao":4.64,"projetos_extensao":0.19,"nota_infraestrutura":7.99,"qualidade_infra":5.97,"parque_tecno_infra":10.00,"nota_internacionalizao":4.73,"intercambio_inter":0.00,"pesquisas_inter":9.45,"nota_capital_financeiro":4.52,"orcamento_cap":6.02,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 19, 
+	"fields": {"codigo":"09","nome":"Universidade de Brasília (UNB)","uf":"DF","regiao":"Centro-Oeste","tipo_ie":"Pública","nota_geral":4.98,"nota_cult_emp":4.51,"postura_discente_ce":7.08,"postura_docente_ce":5.89,"disciplinas":0.56,"nota_inovacao":4.97,"pesquisa_inovacao":8.89,"patentes_inovacao":9.23,"incubadas_inovacao":0.89,"nota_extensao":3.90,"redes_extensao":4.75,"projetos_extensao":1.34,"nota_infraestrutura":8.06,"qualidade_infra":6.13,"parque_tecno_infra":10.00,"nota_internacionalizao":4.21,"intercambio_inter":0.00,"pesquisas_inter":8.43,"nota_capital_financeiro":2.75,"orcamento_cap":3.67,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 20, 
+	"fields": {"codigo":"10","nome":"Universidade Federal do Espírito Santo (UFES)","uf":"ES","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":4.95,"nota_cult_emp":4.26,"postura_discente_ce":7.69,"postura_docente_ce":5.10,"disciplinas":0.00,"nota_inovacao":3.74,"pesquisa_inovacao":8.07,"patentes_inovacao":6.88,"incubadas_inovacao":0.00,"nota_extensao":5.48,"redes_extensao":6.11,"projetos_extensao":3.59,"nota_infraestrutura":7.70,"qualidade_infra":5.40,"parque_tecno_infra":10.00,"nota_internacionalizao":4.98,"intercambio_inter":2.40,"pesquisas_inter":7.55,"nota_capital_financeiro":2.19,"orcamento_cap":2.92,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 21, 
+	"fields": {"codigo":"31","nome":"Universidade Federal do Rio Grande do Norte (UFRN)","uf":"RN","regiao":"Nordeste","tipo_ie":"Pública","nota_geral":4.83,"nota_cult_emp":6.94,"postura_discente_ce":7.97,"postura_docente_ce":5.64,"disciplinas":7.20,"nota_inovacao":5.21,"pesquisa_inovacao":8.43,"patentes_inovacao":8.83,"incubadas_inovacao":1.80,"nota_extensao":4.67,"redes_extensao":5.30,"projetos_extensao":2.77,"nota_infraestrutura":3.20,"qualidade_infra":6.40,"parque_tecno_infra":0.00,"nota_internacionalizao":4.86,"intercambio_inter":1.92,"pesquisas_inter":7.80,"nota_capital_financeiro":3.39,"orcamento_cap":4.51,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 22, 
+	"fields": {"codigo":"02","nome":"Universidade Federal do Amazonas (UFAM)","uf":"AM","regiao":"Norte","tipo_ie":"Pública","nota_geral":4.79,"nota_cult_emp":5.27,"postura_discente_ce":6.99,"postura_docente_ce":6.01,"disciplinas":2.81,"nota_inovacao":3.77,"pesquisa_inovacao":6.85,"patentes_inovacao":7.28,"incubadas_inovacao":0.47,"nota_extensao":4.78,"redes_extensao":5.77,"projetos_extensao":1.83,"nota_infraestrutura":8.12,"qualidade_infra":6.25,"parque_tecno_infra":10.00,"nota_internacionalizao":2.96,"intercambio_inter":0.04,"pesquisas_inter":5.88,"nota_capital_financeiro":1.09,"orcamento_cap":1.46,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 23, 
+	"fields": {"codigo":"05","nome":"Universidade Federal da Bahia (UFBA)","uf":"BA","regiao":"Nordeste","tipo_ie":"Pública","nota_geral":4.78,"nota_cult_emp":4.36,"postura_discente_ce":7.22,"postura_docente_ce":5.37,"disciplinas":0.48,"nota_inovacao":4.52,"pesquisa_inovacao":8.72,"patentes_inovacao":9.38,"incubadas_inovacao":0.00,"nota_extensao":3.86,"redes_extensao":4.41,"projetos_extensao":2.23,"nota_infraestrutura":7.96,"qualidade_infra":5.91,"parque_tecno_infra":10.00,"nota_internacionalizao":4.26,"intercambio_inter":0.00,"pesquisas_inter":8.53,"nota_capital_financeiro":2.18,"orcamento_cap":2.91,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 24, 
+	"fields": {"codigo":"01","nome":"Universidade Federal de Alagoas (UFAL)","uf":"AL","regiao":"Nordeste","tipo_ie":"Pública","nota_geral":4.73,"nota_cult_emp":7.28,"postura_discente_ce":7.54,"postura_docente_ce":5.71,"disciplinas":8.59,"nota_inovacao":4.61,"pesquisa_inovacao":7.13,"patentes_inovacao":6.58,"incubadas_inovacao":2.36,"nota_extensao":4.23,"redes_extensao":5.28,"projetos_extensao":1.07,"nota_infraestrutura":5.06,"qualidade_infra":5.12,"parque_tecno_infra":5.00,"nota_internacionalizao":3.71,"intercambio_inter":0.17,"pesquisas_inter":7.25,"nota_capital_financeiro":1.25,"orcamento_cap":1.66,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 25, 
+	"fields": {"codigo":"37","nome":"Universidade do Extremo Sul Catarinense (UNESC)","uf":"SC","regiao":"Sul","tipo_ie":"Comunitária","nota_geral":4.70,"nota_cult_emp":7.58,"postura_discente_ce":6.75,"postura_docente_ce":7.91,"disciplinas":8.08,"nota_inovacao":3.21,"pesquisa_inovacao":6.45,"patentes_inovacao":4.60,"incubadas_inovacao":0.89,"nota_extensao":2.03,"redes_extensao":2.31,"projetos_extensao":1.17,"nota_infraestrutura":8.96,"qualidade_infra":7.91,"parque_tecno_infra":10.00,"nota_internacionalizao":2.44,"intercambio_inter":0.20,"pesquisas_inter":4.68,"nota_capital_financeiro":0.98,"orcamento_cap":1.30,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 26, 
+	"fields": {"codigo":"13","nome":"Universidade Federal de Juiz de Fora (UFJF)","uf":"MG","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":4.62,"nota_cult_emp":4.66,"postura_discente_ce":7.46,"postura_docente_ce":5.22,"disciplinas":1.30,"nota_inovacao":5.04,"pesquisa_inovacao":8.86,"patentes_inovacao":7.90,"incubadas_inovacao":1.70,"nota_extensao":2.84,"redes_extensao":3.03,"projetos_extensao":2.27,"nota_infraestrutura":5.72,"qualidade_infra":6.44,"parque_tecno_infra":5.00,"nota_internacionalizao":6.94,"intercambio_inter":4.53,"pesquisas_inter":9.35,"nota_capital_financeiro":2.77,"orcamento_cap":3.69,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 27, 
+	"fields": {"codigo":"26","nome":"Universidade Federal do Paraná (UFPR)","uf":"PR","regiao":"Sul","tipo_ie":"Pública","nota_geral":4.60,"nota_cult_emp":5.23,"postura_discente_ce":7.36,"postura_docente_ce":5.55,"disciplinas":2.79,"nota_inovacao":4.91,"pesquisa_inovacao":9.13,"patentes_inovacao":9.78,"incubadas_inovacao":0.36,"nota_extensao":2.94,"redes_extensao":3.56,"projetos_extensao":1.08,"nota_infraestrutura":5.76,"qualidade_infra":6.51,"parque_tecno_infra":5.00,"nota_internacionalizao":5.42,"intercambio_inter":2.74,"pesquisas_inter":8.10,"nota_capital_financeiro":2.89,"orcamento_cap":3.86,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 28, 
+	"fields": {"codigo":"20","nome":"Universidade Federal do Triângulo Mineiro (UFTM)","uf":"MG","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":4.57,"nota_cult_emp":4.41,"postura_discente_ce":7.42,"postura_docente_ce":5.82,"disciplinas":0.00,"nota_inovacao":4.45,"pesquisa_inovacao":7.03,"patentes_inovacao":1.73,"incubadas_inovacao":4.51,"nota_extensao":3.01,"redes_extensao":3.62,"projetos_extensao":1.16,"nota_infraestrutura":7.63,"qualidade_infra":5.26,"parque_tecno_infra":10.00,"nota_internacionalizao":3.20,"intercambio_inter":0.00,"pesquisas_inter":6.40,"nota_capital_financeiro":3.52,"orcamento_cap":4.70,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 29, 
+	"fields": {"codigo":"23","nome":"Universidade Federal Rural de Pernambuco (UFRPE)","uf":"PE","regiao":"Nordeste","tipo_ie":"Pública","nota_geral":4.52,"nota_cult_emp":8.15,"postura_discente_ce":7.97,"postura_docente_ce":6.47,"disciplinas":10.00,"nota_inovacao":4.17,"pesquisa_inovacao":7.45,"patentes_inovacao":6.73,"incubadas_inovacao":1.24,"nota_extensao":2.29,"redes_extensao":2.33,"projetos_extensao":2.18,"nota_infraestrutura":5.41,"qualidade_infra":5.82,"parque_tecno_infra":5.00,"nota_internacionalizao":2.52,"intercambio_inter":0.32,"pesquisas_inter":4.73,"nota_capital_financeiro":2.63,"orcamento_cap":3.51,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 30, 
+	"fields": {"codigo":"27","nome":"Universidade Tecnológica Federal do Paraná (UTFPR)","uf":"PR","regiao":"Sul","tipo_ie":"Pública","nota_geral":4.46,"nota_cult_emp":4.48,"postura_discente_ce":7.18,"postura_docente_ce":5.90,"disciplinas":0.36,"nota_inovacao":3.89,"pesquisa_inovacao":6.24,"patentes_inovacao":7.65,"incubadas_inovacao":0.84,"nota_extensao":3.76,"redes_extensao":3.70,"projetos_extensao":3.93,"nota_infraestrutura":8.00,"qualidade_infra":6.00,"parque_tecno_infra":10.00,"nota_internacionalizao":2.25,"intercambio_inter":0.00,"pesquisas_inter":4.50,"nota_capital_financeiro":2.14,"orcamento_cap":2.85,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 31, 
+	"fields": {"codigo":"34","nome":"Universidade Federal do Rio Grande (FURG)","uf":"RS","regiao":"Sul","tipo_ie":"Pública","nota_geral":4.39,"nota_cult_emp":5.10,"postura_discente_ce":7.15,"postura_docente_ce":5.92,"disciplinas":2.22,"nota_inovacao":4.40,"pesquisa_inovacao":7.78,"patentes_inovacao":6.10,"incubadas_inovacao":1.86,"nota_extensao":0.78,"redes_extensao":0.95,"projetos_extensao":0.30,"nota_infraestrutura":8.61,"qualidade_infra":7.22,"parque_tecno_infra":10.00,"nota_internacionalizao":3.63,"intercambio_inter":0.00,"pesquisas_inter":7.25,"nota_capital_financeiro":2.53,"orcamento_cap":3.37,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 32, 
+	"fields": {"codigo":"16","nome":"Universidade Federal de Ouro Preto (UFOP)","uf":"MG","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":4.26,"nota_cult_emp":5.84,"postura_discente_ce":7.59,"postura_docente_ce":6.17,"disciplinas":3.77,"nota_inovacao":5.02,"pesquisa_inovacao":7.92,"patentes_inovacao":8.05,"incubadas_inovacao":2.06,"nota_extensao":2.12,"redes_extensao":2.19,"projetos_extensao":1.88,"nota_infraestrutura":3.17,"qualidade_infra":6.34,"parque_tecno_infra":0.00,"nota_internacionalizao":8.16,"intercambio_inter":8.00,"pesquisas_inter":8.33,"nota_capital_financeiro":2.08,"orcamento_cap":2.78,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 33, 
+	"fields": {"codigo":"29","nome":"Universidade do Estado do Rio de Janeiro (UERJ)","uf":"RJ","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":4.24,"nota_cult_emp":4.15,"postura_discente_ce":6.91,"postura_docente_ce":5.55,"disciplinas":0.00,"nota_inovacao":4.57,"pesquisa_inovacao":9.23,"patentes_inovacao":6.80,"incubadas_inovacao":1.12,"nota_extensao":2.15,"redes_extensao":1.99,"projetos_extensao":2.64,"nota_infraestrutura":7.42,"qualidade_infra":4.84,"parque_tecno_infra":10.00,"nota_internacionalizao":4.88,"intercambio_inter":0.55,"pesquisas_inter":9.20,"nota_capital_financeiro":0.90,"orcamento_cap":1.20,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 34, 
+	"fields": {"codigo":"18","nome":"Universidade Federal de Uberlândia (UFU)","uf":"MG","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":4.09,"nota_cult_emp":4.61,"postura_discente_ce":7.81,"postura_docente_ce":6.02,"disciplinas":0.00,"nota_inovacao":4.77,"pesquisa_inovacao":7.99,"patentes_inovacao":8.60,"incubadas_inovacao":1.25,"nota_extensao":4.46,"redes_extensao":5.37,"projetos_extensao":1.73,"nota_infraestrutura":3.27,"qualidade_infra":6.53,"parque_tecno_infra":0.00,"nota_internacionalizao":4.05,"intercambio_inter":2.18,"pesquisas_inter":5.93,"nota_capital_financeiro":2.58,"orcamento_cap":3.44,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 35, 
+	"fields": {"codigo":"17","nome":"Universidade Federal de São João Del Rei (UFSJ)","uf":"MG","regiao":"Sudeste","tipo_ie":"Pública","nota_geral":4.07,"nota_cult_emp":6.34,"postura_discente_ce":7.92,"postura_docente_ce":6.53,"disciplinas":4.57,"nota_inovacao":5.01,"pesquisa_inovacao":8.58,"patentes_inovacao":6.25,"incubadas_inovacao":2.60,"nota_extensao":3.00,"redes_extensao":3.79,"projetos_extensao":0.63,"nota_infraestrutura":2.82,"qualidade_infra":5.64,"parque_tecno_infra":0.00,"nota_internacionalizao":4.86,"intercambio_inter":0.00,"pesquisas_inter":9.73,"nota_capital_financeiro":1.55,"orcamento_cap":2.06,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 36, 
+	"fields": {"codigo":"36","nome":"Fundação Universidade do Estado de Santa Catarina (UDESC)","uf":"SC","regiao":"Sul","tipo_ie":"Pública","nota_geral":3.90,"nota_cult_emp":4.65,"postura_discente_ce":7.43,"postura_docente_ce":6.53,"disciplinas":0.00,"nota_inovacao":2.54,"pesquisa_inovacao":6.58,"patentes_inovacao":3.60,"incubadas_inovacao":0.00,"nota_extensao":3.40,"redes_extensao":4.53,"projetos_extensao":0.00,"nota_infraestrutura":5.59,"qualidade_infra":6.18,"parque_tecno_infra":5.00,"nota_internacionalizao":4.70,"intercambio_inter":4.24,"pesquisas_inter":5.15,"nota_capital_financeiro":1.97,"orcamento_cap":2.63,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 37, 
+	"fields": {"codigo":"32","nome":"Fundação Universidade Federal de Ciências da Saúde de Porto Alegre (UFCSPA)","uf":"RS","regiao":"Sul","tipo_ie":"Pública","nota_geral":3.85,"nota_cult_emp":4.38,"postura_discente_ce":7.52,"postura_docente_ce":5.61,"disciplinas":0.00,"nota_inovacao":2.69,"pesquisa_inovacao":7.71,"patentes_inovacao":3.05,"incubadas_inovacao":0.00,"nota_extensao":2.15,"redes_extensao":1.99,"projetos_extensao":2.66,"nota_infraestrutura":5.91,"qualidade_infra":6.81,"parque_tecno_infra":5.00,"nota_internacionalizao":3.66,"intercambio_inter":0.00,"pesquisas_inter":7.33,"nota_capital_financeiro":4.57,"orcamento_cap":6.09,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 38, 
+	"fields": {"codigo":"04","nome":"Universidade Estadual de Santa Cruz (UESC)","uf":"BA","regiao":"Nordeste","tipo_ie":"Pública","nota_geral":3.83,"nota_cult_emp":5.74,"postura_discente_ce":7.40,"postura_docente_ce":6.20,"disciplinas":3.62,"nota_inovacao":3.91,"pesquisa_inovacao":7.22,"patentes_inovacao":5.85,"incubadas_inovacao":1.28,"nota_extensao":2.07,"redes_extensao":1.87,"projetos_extensao":2.65,"nota_infraestrutura":5.46,"qualidade_infra":5.91,"parque_tecno_infra":5.00,"nota_internacionalizao":3.96,"intercambio_inter":0.51,"pesquisas_inter":7.40,"nota_capital_financeiro":0.00,"orcamento_cap":0.00,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 39, 
+	"fields": {"codigo":"08","nome":"Universidade Católica de Brasília (UCB)","uf":"DF","regiao":"Centro-Oeste","tipo_ie":"Privada","nota_geral":3.75,"nota_cult_emp":5.45,"postura_discente_ce":7.39,"postura_docente_ce":7.14,"disciplinas":1.83,"nota_inovacao":3.86,"pesquisa_inovacao":6.85,"patentes_inovacao":6.03,"incubadas_inovacao":1.28,"nota_extensao":1.58,"redes_extensao":1.96,"projetos_extensao":0.45,"nota_infraestrutura":5.82,"qualidade_infra":6.63,"parque_tecno_infra":5.00,"nota_internacionalizao":4.09,"intercambio_inter":0.02,"pesquisas_inter":8.15,"nota_capital_financeiro":0.00,"orcamento_cap":0.00,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 40, 
+	"fields": {"codigo":"06","nome":"Universidade Estadual do Ceará (UECE)","uf":"CE","regiao":"Nordeste","tipo_ie":"Pública","nota_geral":3.48,"nota_cult_emp":4.86,"postura_discente_ce":7.21,"postura_docente_ce":6.38,"disciplinas":0.99,"nota_inovacao":3.98,"pesquisa_inovacao":6.61,"patentes_inovacao":6.25,"incubadas_inovacao":1.52,"nota_extensao":1.56,"redes_extensao":1.90,"projetos_extensao":0.53,"nota_infraestrutura":5.12,"qualidade_infra":5.24,"parque_tecno_infra":5.00,"nota_internacionalizao":3.76,"intercambio_inter":0.22,"pesquisas_inter":7.30,"nota_capital_financeiro":0.00,"orcamento_cap":0.00,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 41, 
+	"fields": {"codigo":"12","nome":"Pontifícia Universidade Católica de Minas Gerais (PUC MINAS)","uf":"MG","regiao":"Sudeste","tipo_ie":"Privada","nota_geral":3.25,"nota_cult_emp":5.47,"postura_discente_ce":7.52,"postura_docente_ce":6.88,"disciplinas":1.99,"nota_inovacao":2.02,"pesquisa_inovacao":5.04,"patentes_inovacao":3.05,"incubadas_inovacao":0.00,"nota_extensao":1.55,"redes_extensao":1.97,"projetos_extensao":0.30,"nota_infraestrutura":6.07,"qualidade_infra":7.14,"parque_tecno_infra":5.00,"nota_internacionalizao":2.30,"intercambio_inter":0.90,"pesquisas_inter":3.70,"nota_capital_financeiro":0.00,"orcamento_cap":0.00,"endowment_cap":0.00}
+},
+{
+	"model": "ranking.University",
+	"pk": 42, 
+	"fields": {"codigo":"24","nome":"Universidade Federal do Piauí (UFPI)","uf":"PI","regiao":"Nordeste","tipo_ie":"Pública","nota_geral":3.22,"nota_cult_emp":4.88,"postura_discente_ce":7.13,"postura_docente_ce":6.45,"disciplinas":1.06,"nota_inovacao":3.80,"pesquisa_inovacao":6.68,"patentes_inovacao":7.65,"incubadas_inovacao":0.43,"nota_extensao":2.25,"redes_extensao":2.66,"projetos_extensao":1.02,"nota_infraestrutura":3.17,"qualidade_infra":6.34,"parque_tecno_infra":0.00,"nota_internacionalizao":2.09,"intercambio_inter":0.00,"pesquisas_inter":4.18,"nota_capital_financeiro":1.91,"orcamento_cap":2.54,"endowment_cap":0.00}
+}]
