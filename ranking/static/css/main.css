@@ -141,7 +141,7 @@ opacity:0.9;
  #home .main-nav{
     background-color:white;
     width:100%;
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px #227DBF;
     position:fixed;
     z-index: 1;
     
@@ -296,6 +296,10 @@ opacity:0.9;
    padding-left: 10px;
    //margin-left: 65px;
 }
+.navbar-menu li a:hover{
+    color:blue;
+    
+}
 
 .navbar-menu li.active a {
   background-color: rgba(0,0,0,.2);
@@ -306,7 +310,7 @@ opacity:0.9;
   padding:0;
 }
 #bt{
-    border:solid 2px black;
+    border:solid 2px #227DBF;
 }
 
 
@@ -815,6 +819,7 @@ h1 span{
     display:none;
 }
 
+
 /****TABELA COM SCROLL****/
 .table-wrapper {
   position:relative;
@@ -1168,6 +1173,7 @@ iframe{
 }
 
 
+
 }
 @media (max-width:800px){
 .navbar-menu li a {
@@ -1200,6 +1206,11 @@ iframe{
    padding-left: 15px;
    //margin-left: 45px;
 }
+#BRASA{
+    padding-top: 5%;
+    width:10%;
+    height: auto;
+}
 
 #home .social-icons{
   text-align: center;
@@ -1226,6 +1237,47 @@ iframe{
     float:left;
 }
 }
+@media (max-width:380px){
+
+
+
+.navbar-menu li a {
+      
+      padding-top: 30px;
+      padding-bottom: 30px;
+      
+}
+.navbar-brand{
+    width:45%;
+}
+
+#Aiesec{
+    padding-top: 25%;
+    width:40%;
+    height: auto;
+}
+#Enactus{
+    padding-top: 10%;
+    width:40%;
+    height: auto;
+}
+#CSF{
+    padding-top: 10%;
+    width:40%;
+    height: auto;
+}
+#BJ{
+    padding-top: 10%;
+    width:40%;
+    height: auto;
+}
+#BRASA{
+    padding-top: 10%;
+    width:40%;
+    height: auto;
+}
+
+}
 @media (max-width:370px){
     #logo{
     margin-left: 10px;
@@ -1239,10 +1291,40 @@ iframe{
 
 .navbar-menu li a {
       
-      padding-top: 25px;
-      padding-bottom: 25px;
+      padding-top: 30px;
+      padding-bottom: 30px;
       
 }
+.navbar-brand{
+    width:50%;
+}
+
+#Aiesec{
+    padding-top: 25%;
+    width:40%;
+    height: auto;
+}
+#Enactus{
+    padding-top: 10%;
+    width:40%;
+    height: auto;
+}
+#CSF{
+    padding-top: 10%;
+    width:40%;
+    height: auto;
+}
+#BJ{
+    padding-top: 10%;
+    width:40%;
+    height: auto;
+}
+#BRASA{
+    padding-top: 10%;
+    width:40%;
+    height: auto;
+}
+
 }
 
 @media (max-width:340px){
