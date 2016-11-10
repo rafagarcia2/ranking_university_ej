@@ -131,30 +131,34 @@
           <div class="row textos headers">
               <h1><span>Ranking</span></h1><br/>
               <div class="col-sm-12">
-                  <table  class="table table-striped table-bordered" cellspacing="0" width="80%">
-                          <thead>
-                              <tr>
-                                  <th>Posição</th>
-                                  <th>IES</th>
-                                  <th>UF</th>
-                                  <th>Tipo de IES</th>
-                                  <th>Nota Geral</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              {% for universidade in univ_geral %}
-  
-                                <tr>
-                                  <th>{{ forloop.counter }}</th>
-                                  <th>{{ universidade.nome }}</th> 
-                                  <th>{{ universidade.uf }}</th>
-                                  <th>{{ universidade.tipo_ie }}</th>
-                                  <th>{{ universidade.nota_geral }}</th>
-                                </tr>
+                <div class="table-wrapper">
+                    <div class="table-scroll">
+                      <table  class="table table-striped table-bordered" cellspacing="0" width="80%">
+                              <thead>
+                                  <tr>
+                                      <th>Posição</th>
+                                      <th>IES</th>
+                                      <th>UF</th>
+                                      <th>Tipo de IES</th>
+                                      <th>Nota Geral</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  {% for universidade in univ_geral %}
+      
+                                    <tr>
+                                      <th>{{ forloop.counter }}</th>
+                                      <th>{{ universidade.nome }}</th> 
+                                      <th>{{ universidade.uf }}</th>
+                                      <th>{{ universidade.tipo_ie }}</th>
+                                      <th>{{ universidade.nota_geral }}</th>
+                                    </tr>
 
-                              {% endfor %}
-                          </tbody>
-                      </table>
+                                  {% endfor %}
+                              </tbody>
+                          </table>
+                        </div>
+                      </div>
               </div>
           </div>
       </div>
@@ -168,33 +172,33 @@
           <h1><span>Indicadores</span></h1><br/>
  
         <div class="col-sm-2 col-xs-12 wow fadeInLeft" id="cultura" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <a href="#" >
+            <a href="#indicadores" >
             <i ><img src="{% static 'images/medal.svg' %}" alt=""/></i>    
             </a>
         </div>
         <div class="col-sm-2 col-xs-12 wow fadeInLeft" id="inovacao" data-wow-duration="1000ms" data-wow-delay="500ms">
-            <a href="#">
+            <a href="#indicadores">
             <i ><img src="{% static 'images/technology.svg' %}" alt=""/></i>  
             </a>
         </div> 
         <div class="col-sm-2 col-xs-12 wow fadeInLeft" id="extensao" data-wow-duration="1000ms" data-wow-delay="700ms"> 
-            <a href="#">
+            <a href="#indicadores">
           <i ><img src="{% static 'images/nature.svg' %}" alt=""/></i>   
             </a>
         </div> 
         <div class="col-sm-2 col-xs-12 wow fadeInLeft" id="infraestrutura" data-wow-duration="1000ms" data-wow-delay="700ms">
-            <a href="#">
+            <a href="#indicadores">
                 <i ><img src="{% static 'images/office.svg' %}" alt=""/></i>
             </a>
         </div>
         <div class="col-sm-2 col-xs-12 wow fadeInLeft" id="internacionalizacao" data-wow-duration="1000ms" data-wow-delay="700ms">
-            <a href="#">
+            <a href="#indicadores">
                 <i ><img src="{% static 'images/internet.svg' %}" alt=""/></i>
             </a>
           
         </div>
         <div class="col-sm-2 col-xs-12 wow fadeInLeft" id="capital" data-wow-duration="1000ms" data-wow-delay="700ms"> 
-            <a href="#">
+            <a href="#indicadores">
                 <i ><img src="{% static 'images/money.svg' %}" alt=""/></i> 
             </a>
         </div>
@@ -793,39 +797,41 @@
                           <a href="#fluxograma-cultura">Ver Fluxograma</a>
                       </p>
                       
-                      
-                      <table id="culuraEmpreendedora" class="table table-striped table-bordered" cellspacing="0" width="80%">
-                          <thead>
-                              <tr>
-                                  <th>Posição</th>
-                                  <th>IES</th>
-                                  <th>UF</th>
-                                  <th>Tipo de IES</th>
-                                  <th>Nota</th>
-                                  <th>Postura Discente</th>
-                                  <th>Postura Docente</th>
-                                  <th>Disciplinas</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                                {% for universidade in univ_cultura %}
-  
-                                <tr>
-                                  <th>{{ forloop.counter }}</th>
-                                  <th>{{ universidade.nome }}</th> 
-                                  <th>{{ universidade.uf }}</th>
-                                  <th>{{ universidade.tipo_ie }}</th>
-                                  <th>{{ universidade.nota_cult_emp }}</th>
-                                  <th>{{ universidade.postura_discente_ce }}</th>
-                                  <th>{{ universidade.postura_docente_ce }}</th>
-                                  <th>{{ universidade.disciplinas }}</th>
-                                </tr>
+                      <div class="table-wrapper">
+                        <div class="table-scroll">
+                          
+                          <table id="culuraEmpreendedora" class="table table-striped table-bordered" cellspacing="0" width="80%">
+                              <thead>
+                                  <tr>
+                                      <th>Posição</th>
+                                      <th>IES</th>
+                                      <th>UF</th>
+                                      <th>Tipo de IES</th>
+                                      <th>Nota</th>
+                                      <th>Postura Discente</th>
+                                      <th>Postura Docente</th>
+                                      <th>Disciplinas</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                    {% for universidade in univ_cultura %}
+      
+                                    <tr>
+                                      <th>{{ forloop.counter }}</th>
+                                      <th>{{ universidade.nome }}</th> 
+                                      <th>{{ universidade.uf }}</th>
+                                      <th>{{ universidade.tipo_ie }}</th>
+                                      <th>{{ universidade.nota_cult_emp }}</th>
+                                      <th>{{ universidade.postura_discente_ce }}</th>
+                                      <th>{{ universidade.postura_docente_ce }}</th>
+                                      <th>{{ universidade.disciplinas }}</th>
+                                    </tr>
 
-                                {% endfor %}
-                          </tbody>
-                      </table>
-
-                  
+                                    {% endfor %}
+                              </tbody>
+                          </table>
+                        </div>
+                      </div>
               </div>
           </div>
         <div class="row">
@@ -913,38 +919,40 @@
                           <a href="#fluxograma-inovacao">Ver fluxograma</a>
                       </p>
                       
-                      <table id="Inovacaot" class="table table-striped table-bordered" cellspacing="0" width="80%">
-                          <thead>
-                              <tr>
-                                  <th>Posição</th>
-                                  <th>IES</th>
-                                  <th>UF</th>
-                                  <th>Tipo de IES</th>
-                                  <th>Nota</th>
-                                  <th>Pesquisa</th>
-                                  <th>Patentes</th>
-                                  <th>Incubadas</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              {% for universidade in univ_inovacao %}
-  
-                                <tr>
-                                  <th>{{ forloop.counter }}</th>
-                                  <th>{{ universidade.nome }}</th> 
-                                  <th>{{ universidade.uf }}</th>
-                                  <th>{{ universidade.tipo_ie }}</th>
-                                  <th>{{ universidade.nota_inovacao }}</th>
-                                  <th>{{ universidade.pesquisa_inovacao }}</th>
-                                  <th>{{ universidade.patentes_inovacao }}</th>
-                                  <th>{{ universidade.incubadas_inovacao }}</th>
-                                </tr>
+                      <div class="table-wrapper">
+                        <div class="table-scroll">
+                          <table id="Inovacaot" class="table table-striped table-bordered" cellspacing="0" width="80%">
+                              <thead>
+                                  <tr>
+                                      <th>Posição</th>
+                                      <th>IES</th>
+                                      <th>UF</th>
+                                      <th>Tipo de IES</th>
+                                      <th>Nota</th>
+                                      <th>Pesquisa</th>
+                                      <th>Patentes</th>
+                                      <th>Incubadas</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  {% for universidade in univ_inovacao %}
+      
+                                    <tr>
+                                      <th>{{ forloop.counter }}</th>
+                                      <th>{{ universidade.nome }}</th> 
+                                      <th>{{ universidade.uf }}</th>
+                                      <th>{{ universidade.tipo_ie }}</th>
+                                      <th>{{ universidade.nota_inovacao }}</th>
+                                      <th>{{ universidade.pesquisa_inovacao }}</th>
+                                      <th>{{ universidade.patentes_inovacao }}</th>
+                                      <th>{{ universidade.incubadas_inovacao }}</th>
+                                    </tr>
 
-                                {% endfor %}
-                          </tbody>
-                      </table>
-
-                  
+                                    {% endfor %}
+                              </tbody>
+                          </table>
+                      </div>
+                    </div>
               </div>
           </div>
         <div class="row">
@@ -995,36 +1003,38 @@
                           <a href="#fluxograma-extensao">Ver fluxograma</a>
                       </p>
                       
-                      <table id="Extensaot" class="table table-striped table-bordered" cellspacing="0" width="80%">
-                          <thead>
-                              <tr>
-                                  <th>Posição</th>
-                                  <th>IES</th>
-                                  <th>UF</th>
-                                  <th>Tipo de IES</th>
-                                  <th>Nota</th>
-                                  <th>Redes</th>
-                                  <th>Projetos</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                          {% for universidade in univ_extensao %}
+                      <div class="table-wrapper">
+                        <div class="table-scroll">
+                          <table id="Extensaot" class="table table-striped table-bordered" cellspacing="0" width="80%">
+                              <thead>
+                                  <tr>
+                                      <th>Posição</th>
+                                      <th>IES</th>
+                                      <th>UF</th>
+                                      <th>Tipo de IES</th>
+                                      <th>Nota</th>
+                                      <th>Redes</th>
+                                      <th>Projetos</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                              {% for universidade in univ_extensao %}
 
-                            <tr>
-                              <th>{{ forloop.counter }}</th>
-                              <th>{{ universidade.nome }}</th> 
-                              <th>{{ universidade.uf }}</th>
-                              <th>{{ universidade.tipo_ie }}</th>
-                              <th>{{ universidade.nota_extensao }}</th>
-                              <th>{{ universidade.redes_extensao }}</th>
-                              <th>{{ universidade.projetos_extensao }}</th>
-                            </tr>
+                                <tr>
+                                  <th>{{ forloop.counter }}</th>
+                                  <th>{{ universidade.nome }}</th> 
+                                  <th>{{ universidade.uf }}</th>
+                                  <th>{{ universidade.tipo_ie }}</th>
+                                  <th>{{ universidade.nota_extensao }}</th>
+                                  <th>{{ universidade.redes_extensao }}</th>
+                                  <th>{{ universidade.projetos_extensao }}</th>
+                                </tr>
 
-                            {% endfor %}
-                          </tbody>
-                      </table>
-
-                  
+                                {% endfor %}
+                              </tbody>
+                          </table>
+                      </div>
+                    </div>
               </div>
           </div>
         <div class="row images">
@@ -1087,36 +1097,39 @@
                           <li>2.2. Internet (3 pontos)</li>
                       </ul>
                       <p><a href="#fluxograma-infraestrutura">Ver fluxograma</a></p>
-                      <table id="InfraestruturaT" class="table table-striped table-bordered" cellspacing="0" width="80%">
-                          <thead>
-                              <tr>
-                                  <th>Posição</th>
-                                  <th>IES</th>
-                                  <th>UF</th>
-                                  <th>Tipo de IES</th>
-                                  <th>Nota</th>
-                                  <th>Qualidade</th>
-                                  <th>Parque Tecnológico</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                          {% for universidade in univ_infraestrutura %}
+                      
+                      <div class="table-wrapper">
+                        <div class="table-scroll">
+                          <table id="InfraestruturaT" class="table table-striped table-bordered" cellspacing="0" width="80%">
+                              <thead>
+                                  <tr>
+                                      <th>Posição</th>
+                                      <th>IES</th>
+                                      <th>UF</th>
+                                      <th>Tipo de IES</th>
+                                      <th>Nota</th>
+                                      <th>Qualidade</th>
+                                      <th>Parque Tecnológico</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                              {% for universidade in univ_infraestrutura %}
 
-                            <tr>
-                              <th>{{ forloop.counter }}</th>
-                              <th>{{ universidade.nome }}</th> 
-                              <th>{{ universidade.uf }}</th>
-                              <th>{{ universidade.tipo_ie }}</th>
-                              <th>{{ universidade.nota_infraestrutura }}</th>
-                              <th>{{ universidade.qualidade_infra }}</th>
-                              <th>{{ universidade.parque_tecno_infra }}</th>
-                            </tr>
+                                <tr>
+                                  <th>{{ forloop.counter }}</th>
+                                  <th>{{ universidade.nome }}</th> 
+                                  <th>{{ universidade.uf }}</th>
+                                  <th>{{ universidade.tipo_ie }}</th>
+                                  <th>{{ universidade.nota_infraestrutura }}</th>
+                                  <th>{{ universidade.qualidade_infra }}</th>
+                                  <th>{{ universidade.parque_tecno_infra }}</th>
+                                </tr>
 
-                          {% endfor %}
-                          </tbody>
-                      </table>
-
-                  
+                              {% endfor %}
+                              </tbody>
+                          </table>
+                        </div>
+                      </div>
               </div>
           </div>
         <div class="row">
@@ -1171,36 +1184,38 @@
                           <a href="#fluxograma-internacionalizacao">Ver fluxograma</a>
                       </p>
                       
-                      <table id="Internacionalizacaot" class="table table-striped table-bordered" cellspacing="0" width="80%">
-                          <thead>
-                              <tr>
-                                  <th>Posição</th>
-                                  <th>IES</th>
-                                  <th>UF</th>
-                                  <th>Tipo de IES</th>
-                                  <th>Nota</th>
-                                  <th>Intercâmbio</th>
-                                  <th>Pesquisas Internacionais</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                            {% for universidade in univ_internacionalizao %}
+                      <div class="table-wrapper">
+                        <div class="table-scroll">
+                          <table id="Internacionalizacaot" class="table table-striped table-bordered" cellspacing="0" width="80%">
+                              <thead>
+                                  <tr>
+                                      <th>Posição</th>
+                                      <th>IES</th>
+                                      <th>UF</th>
+                                      <th>Tipo de IES</th>
+                                      <th>Nota</th>
+                                      <th>Intercâmbio</th>
+                                      <th>Pesquisas Internacionais</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                {% for universidade in univ_internacionalizao %}
 
-                            <tr>
-                              <th>{{ forloop.counter }}</th>
-                              <th>{{ universidade.nome }}</th> 
-                              <th>{{ universidade.uf }}</th>
-                              <th>{{ universidade.tipo_ie }}</th>
-                              <th>{{ universidade.nota_infraestrutura }}</th>
-                              <th>{{ universidade.qualidade_infra }}</th>
-                              <th>{{ universidade.parque_tecno_infra }}</th>
-                            </tr>
+                                <tr>
+                                  <th>{{ forloop.counter }}</th>
+                                  <th>{{ universidade.nome }}</th> 
+                                  <th>{{ universidade.uf }}</th>
+                                  <th>{{ universidade.tipo_ie }}</th>
+                                  <th>{{ universidade.nota_infraestrutura }}</th>
+                                  <th>{{ universidade.qualidade_infra }}</th>
+                                  <th>{{ universidade.parque_tecno_infra }}</th>
+                                </tr>
 
-                            {% endfor %}
-                          </tbody>
-                      </table>
-
-                  
+                                {% endfor %}
+                              </tbody>
+                          </table>
+                        </div>
+                      </div>
               </div>
           </div>
         <div class="row">
@@ -1258,36 +1273,38 @@
                           <a href="#fluxograma-capital">Ver fluxograma</a>
                       </p>
                       
-                      <table id="capitalFinanceiro" class="table table-striped table-bordered" cellspacing="0" width="80%">
-                          <thead>
-                              <tr>
-                                  <th>Posição</th>
-                                  <th>IES</th>
-                                  <th>UF</th>
-                                  <th>Tipo de IES</th>
-                                  <th>Nota</th>
-                                  <th>Orçamento</th>
-                                  <th>Endowment</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                            {% for universidade in univ_capital %}
+                      <div class="table-wrapper">
+                        <div class="table-scroll">
+                          <table id="capitalFinanceiro" class="table table-striped table-bordered" cellspacing="0" width="80%">
+                              <thead>
+                                  <tr>
+                                      <th>Posição</th>
+                                      <th>IES</th>
+                                      <th>UF</th>
+                                      <th>Tipo de IES</th>
+                                      <th>Nota</th>
+                                      <th>Orçamento</th>
+                                      <th>Endowment</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                {% for universidade in univ_capital %}
 
-                            <tr>
-                              <th>{{ forloop.counter }}</th>
-                              <th>{{ universidade.nome }}</th> 
-                              <th>{{ universidade.uf }}</th>
-                              <th>{{ universidade.tipo_ie }}</th>
-                              <th>{{ universidade.nota_capital_financeiro }}</th>
-                              <th>{{ universidade.orcamento_cap }}</th>
-                              <th>{{ universidade.endowment_cap }}</th>
-                            </tr>
+                                <tr>
+                                  <th>{{ forloop.counter }}</th>
+                                  <th>{{ universidade.nome }}</th> 
+                                  <th>{{ universidade.uf }}</th>
+                                  <th>{{ universidade.tipo_ie }}</th>
+                                  <th>{{ universidade.nota_capital_financeiro }}</th>
+                                  <th>{{ universidade.orcamento_cap }}</th>
+                                  <th>{{ universidade.endowment_cap }}</th>
+                                </tr>
 
-                            {% endfor %}
-                          </tbody>
-                      </table>
-
-                  
+                                {% endfor %}
+                              </tbody>
+                          </table>
+                        </div>
+                      </div>
               </div>
           </div>
 
